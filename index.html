@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <title>ㅌㅗㅇㅎㅏㅂㅎㅗㅁ</title>
 </head>
 <body>
@@ -241,16 +242,35 @@
                         <a href="javascript:void(0)" class="fqSubmitBtn">상담신청</a>
                     </div>
                     <div class="fqChk_Box">
-                        <input type="checkbox" class="" name="" id="" value="Y" checked="checked">
-                        <label for=""></label>
-                        <span class="">개인정보취급동의</span>
-                        <input type="checkbox" class="marketingAgree" name="agree2" id="agree2" value="Y" checked="checked">
-                        <label for="agree2"></label>
-                        <span class="chkName marketingName">마케팅수신동의</span>
+                        <div class="chkLeft_Box">
+                            <input type="checkbox" id="marketingAgree" name="agreeChkval1" class="agreeChk" value="Y" checked="checked">
+                            <label for="marketingAgree"></label>
+                            <span class="chkName">미앤미에서 발송하는 시술안내, 공지, 이벤트 등 문자 수신에 동의합니다.(선택)</span>
+                        </div>
+                        <div class="chkRight_Box">
+                            <input type="checkbox" id="privacyAgree" name="agreeChkval2" class="agreeChk" value="Y" checked="checked">
+                            <label for="privacyAgree"></label>
+                            <span class="chkName">개인정보 취급방침에 동의합니다.(필수)</span>
+                            <a class="privacyBtn">더보기</a>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="fInfo_Container"></section>
+            <section class="fInfo_Container">
+                <div class="fiRmembership_Box">
+                    <a href="index.html" class="Rmemberhip_Btn">
+                        <img src="">
+                    </a>
+                </div>
+                <div class="fiBranchinfo_Box">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide branchInfo_slide">
+                            <p class="fBranchName">미앤미 강남본점</p>
+                            <p
+                        </div>
+                    </div>
+                </div>
+            </section>
         </footer>
     </article>
 </body>
