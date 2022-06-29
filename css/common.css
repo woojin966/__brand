@@ -1,0 +1,68 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{font-family: 'Noto Sans KR', sans-serif;}
+
+.subPageTit{font-size: 40px; font-weight: bold; line-height: 1.4;}
+.subPageInnerTit{font-size: 32px; font-weight: bold; line-height: 1.4;}
+.bigSentence{font-size: 24px; line-height: 1.4;}
+.bigSentence_bold{font-size: 24px; font-weight: bold; line-height: 1.4;}
+.midSentence{font-size: 20px; line-height: 1.4;}
+.midSentence_bold{font-size: 20px; font-weight: bold; line-height: 1.4;}
+.normalSentence{font-size: 16px; line-height: 1.4;}
+.normalSentence_bold{font-size: 16px; font-weight: bold; line-height: 1.4;}
+.smallSentence{font-size: 14px; line-height: 1.4;}
+.smallSentence_bold{font-size: 14px; font-weight: bold; line-height: 1.4;}
+.miniSentence{font-size: 12px; line-height: 1.4;}
+
+/* color */
+:root{
+    --darkgray : #888888;
+    --lightgray : #cccccc;
+    --lightbeige : #E2DFD4;
+    --brickbeige : #CD9D87;
+    --darkkbeige : #B59E8F;
+    --pink : #FAB7BE;
+    --deeppink : #F0597D;
+    --shadow : rgba(0,0,0,.05);
+}
+
+/* html, body{width: 100%; height: 100%; min-width: 1920px;} */
+
+/* mainWrap */
+.main_Wrap{position: relative; width:100%; height:100%; min-width: 1920px;}
+
+/* header */
+header{width: 100%; min-width: 1920px;}
+header section{padding: 10px 300px; width: 100%; min-width: 1320px; background-color: #fff;}
+
+.skipnabList{position: relative; width: 100%; text-align: right;}
+.skipnabList:before{content: ''; position: absolute; bottom: -10px; left: 0; width: 100%; height: 1px; background-color: var(--lightgray);}
+.skipnabList li{display: inline-block;}
+.skipMenu{position: relative; margin: 5px;}
+.skipMenu:before{content: ''; position: absolute; top: 4px; right: -9px; width: 1px; height: 12px; background-color: var(--darkgray);}
+.skipnabList li:last-child .skipMenu{margin-right: 0;}
+.skipnabList li:last-child .skipMenu:before{opacity: 0;}
+
+.hnav_Container{position: fixed; left: 0; z-index: 10; box-shadow: 0 3px 3px rgb(0 0 0 / 5%)}
+.hnav_Box{display: flex; justify-content: space-between; width: 100%; min-width: 1320px;}
+.hLogo{height: 40px;}
+.hLogo img{width: auto; height: 100%;}
+.Menu1DpList > li{display: inline-block; margin-right: 10px;}
+.Menu1DpList > li:last-child{margin-right: 0;}
+.menu1Dp{position: relative;  padding: 10px 20px;}
+.joinBranch{padding: 10px 15px; color: #fff; background-color: var(--deeppink);}
+.menu1Dp:before{content: ''; position: absolute; left: 0; bottom: -10px; width: 0; height: 3px; background-color: var(--deeppink); transition: .2s;}
+.menu1Dp:hover:before{width: 100%; transition: .2s;}
+.joinBranch:before{opacity: 0;}
+.Menu2DpList{display: none; position: absolute; top: 0; left: 0;}
+.Menu2DpList.block{display: inline-block;}
+.menu2Dp{padding: 10px;}
+.menu2Dp:hover{font-weight: bold;}
+
+.hnavBg_Box{position: absolute; top: 104px; left: 0; display: none; width: 100%; padding-top: 0; padding-bottom: 20px; background-color: #fff; box-shadow: 0 0 8px var(--shadow);}
+
+/* common container */
+
+/* common box */
+main{padding: 100px 300px; width: 100%; min-width: 1320px;}
+.fakeNav{width: 100%; height: 60px;}
