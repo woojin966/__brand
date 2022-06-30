@@ -26,43 +26,49 @@
     --shadow : rgba(0,0,0,.05);
 }
 
-/* html, body{width: 100%; height: 100%; min-width: 1920px;} */
+html, body{width: 100%; min-width: 1900px;}
 
 /* mainWrap */
 .main_Wrap{position: relative; width:100%; height:100%; min-width: 1900px;}
 
 /* header */
-header{width: 100%; min-width: 1900px;}
-header section{padding: 10px 300px; width: 100%; min-width: 1320px; background-color: #fff;}
+header{width: 100%; min-width: 1900px; box-shadow: 0 3px 3px rgb(0 0 0 / 5%);}
+header section{padding: 0 290px; width: 100%; min-width: 1320px; background-color: #fff;}
 
 .skipnabList{position: relative; width: 100%; text-align: right;}
-.skipnabList:before{content: ''; position: absolute; bottom: -10px; left: 0; width: 100%; height: 1px; background-color: var(--lightgray);}
+.skipnabList:before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: var(--lightgray);}
 .skipnabList li{display: inline-block;}
-.skipMenu{position: relative; margin: 5px;}
-.skipMenu:before{content: ''; position: absolute; top: 4px; right: -9px; width: 1px; height: 12px; background-color: var(--darkgray);}
+.skipMenu{position: relative; margin: 0 5px; padding: 10px 0;}
+.skipMenu:before{content: ''; position: absolute; top: 14px; right: -9px; width: 1px; height: 12px; background-color: var(--darkgray);}
 .skipnabList li:last-child .skipMenu{margin-right: 0;}
 .skipnabList li:last-child .skipMenu:before{opacity: 0;}
 
-.hnav_Container{position: fixed; left: 0; z-index: 10; box-shadow: 0 3px 3px rgb(0 0 0 / 5%)}
-.hnav_Box{display: flex; justify-content: space-between; width: 100%; min-width: 1320px;}
+.hnav_Container{display: flex; justify-content: space-between;}
+.hLogo_Box{padding: 10px 0;}
 .hLogo{height: 40px;}
 .hLogo img{width: auto; height: 100%;}
-.Menu1DpList > li{display: inline-block; margin-right: 10px;}
+.Menu1DpList > li{position: relative; display: inline-block; margin-right: 20px;}
 .Menu1DpList > li:last-child{margin-right: 0;}
-.menu1Dp{position: relative;  padding: 10px 20px;}
+.menu1Dp{padding: 20px;}
 .joinBranch{padding: 10px 15px; color: #fff; background-color: var(--deeppink);}
-.menu1Dp:before{content: ''; position: absolute; left: 0; bottom: -10px; width: 0; height: 3px; background-color: var(--deeppink); transition: .2s;}
-.menu1Dp:hover:before{width: 100%; transition: .2s;}
+.menu1Dp.hoverMenu:before{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background-color: var(--deeppink); transition: .2s;}
 .joinBranch:before{opacity: 0;}
-.Menu2DpList{display: none; position: absolute; top: 0; left: 0;}
+.Menu2DpList{display: none; position: absolute; top: 62px; left: -30%; width: 160%; text-align: center;}
 .Menu2DpList.block{display: inline-block;}
 .menu2Dp{padding: 10px;}
 .menu2Dp:hover{font-weight: bold;}
 
-.hnavBg_Box{position: absolute; top: 104px; left: 0; display: none; width: 100%; padding-top: 0; padding-bottom: 20px; background-color: #fff; box-shadow: 0 0 8px var(--shadow);}
+.hnavBg_Container{position: absolute; top: 104px; left: 0; z-index: -1; display: none; padding: 0; width: 100%; height: 360px;  background-color: #fff; box-shadow: 0 0 8px var(--shadow);}
+.hnavBg_Container.bgOn{display: block;}
 
 /* common container */
+main{position: relative; z-index: -2; padding: 100px 300px; width: 100%; min-width: 1320px;}
+main section{padding: 80px 0; width: 100%;}
+main section:first-child{padding-top: 0;}
+main section:last-child{padding-bottom: 0;}
 
-/* common box */
-main{padding: 100px 300px; width: 100%; min-width: 1320px;}
-.fakeNav{width: 100%; height: 60px;}
+/* footer */
+footer{position: relative; z-index: -2; padding: 0 300px; width: 100%; min-width: 1320px; background-color: var(--lightbeige);}
+.fQuickcontact_Container{position: relative;}
+.fqContactBtn_Box{position: absolute; right: 0; top: -65px; padding: 30px 0; width: 130px; height: 130px; background-color: #E2DFD4; border-radius: 50%; text-align: center;}
+.fqContactBtn_Box:before{content: ''; position: absolute; top: 15px; left: calc(50% - 5px); width: 10px; height: 10px; border-top: 2px solid #000; border-right: 2px solid #000; transform: rotate(45deg);}
