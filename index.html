@@ -214,7 +214,7 @@
     <footer>
         <section class="fQuickcontact_Container">
             <div class="fqContactBtn_Box">
-                <a class="fqContactBtn midSentence_bold">빠른상담</a>
+                <a href="javascript:void(0)" class="fqContactBtn midSentence_bold">빠른상담</a>
             </div>
             <div class="fqContact_Box">
                 <div class="fqTitle_Box">
@@ -222,7 +222,7 @@
                 </div>
                 <div class="fqform_Box">
                     <form id="quickContact_Form_Data" name="quickContact_Form">
-                        <fieldset>
+                        <div class="qcForm_Box">
                             <label for="_branchSelect" class="normalSentence">지점선택</label>
                             <select id="_branchSelect" class="fqinput normalSentence">
                                 <option value="C00004">강남본점</option>
@@ -250,13 +250,19 @@
                                 <option value="C00027">울산점</option>
                                 <option value="C00032">부산센텀시티점</option>
                             </select>
+                        </div>
+                        <div class="qcForm_Box">
                             <label for="_branchText" class="normalSentence">상담내용</label>
                             <input id="_branchText" placeholder="상담을 원하는 시술 및 시술부위를 입력하세요" class="fqinput normalSentence">
+                        </div>
+                        <div class="qcForm_Box">
                             <label for="_branchName" class="normalSentence">이름</label>
                             <input id="_branchName" class="fqinput normalSentence" maxlength='6'>
+                        </div>
+                        <div class="qcForm_Box">
                             <label for="_branchPhone" class="normalSentence">연락처</label>
                             <input id="_branchPhone" class="fqinput normalSentence" maxlength='12'>
-                        </fieldset>
+                        </div>
                     </form>
                 </div>
                 <div class="fqSubmit_Box">
