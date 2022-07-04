@@ -9,7 +9,7 @@
 .midSentence{font-size: 20px; font-weight: normal; line-height: 1.4;}
 .midSentence_bold{font-size: 20px; font-weight: bold; line-height: 1.4;}
 .normalSentence{font-size: 16px; font-weight: normal; line-height: 1.4;}
-.normalSentence_bold{font-size: 16px; font-weight: normal; font-weight: bold; line-height: 1.4;}
+.normalSentence_bold{font-size: 16px; font-weight: bold; line-height: 1.4;}
 .smallSentence{font-size: 14px; font-weight: normal; line-height: 1.4;}
 .smallSentence_bold{font-size: 14px; font-weight: bold; line-height: 1.4;}
 .miniSentence{font-size: 12px; font-weight: normal; line-height: 1.4;}
@@ -26,7 +26,7 @@
     --shadow : rgba(0,0,0,.05);
 }
 
-html, body{width: 100%; min-width: 1900px;}
+html, body{width: 100%; min-width: 1900px; min-height: 967px;}
 
 /* mainWrap */
 .main_Wrap{position: relative; width:100%; height:100%; min-width: 1900px;}
@@ -62,30 +62,52 @@ header section{padding: 0 290px; width: 100%; min-width: 1320px; background-colo
 .hnavBg_Container.bgOn{display: block;}
 
 /* common container */
-main{position: relative; z-index: -2; padding: 100px 300px; width: 100%; min-width: 1320px;}
-main section{padding: 80px 0; width: 100%;}
-main section:first-child{padding-top: 0;}
-main section:last-child{padding-bottom: 0;}
+main{position: relative; z-index: 0; padding: 100px 300px; width: 100%; min-width: 1320px;}
+.subCont_Container{padding: 80px 0; width: 100%;}
+.subCont_Container:first-child{padding-top: 0;}
+.subCont_Container:last-child{padding-bottom: 0;}
 
 /* footer */
 footer{position: relative; z-index: 1;}
 footer > section{padding: 0 300px; width: 100%; min-width: 1320px;}
 .fQuickcontact_Container{position: relative; background-color: var(--lightbeige);}
-.fqContactBtn_Box{position: absolute; right: 300px; top: -65px; z-index: -1; width: 130px; height: 130px; background-color: #E2DFD4; border-radius: 50%; text-align: center;}
-.fqContactBtn_Box:before{content: ''; position: absolute; top: 15px; left: calc(50% - 5px); width: 10px; height: 10px; border-top: 2px solid #000; border-right: 2px solid #000; transform: rotate(-45deg);}
-.fqContactBtn{padding: 30px 0; width: 100%; height: 100%;}
-.fqContact_Box{padding: 40px 0; display: flex; justify-content: space-between; flex-wrap: wrap;}
+.fqContactBtn_Box{position: absolute; right: 300px; top: -50px; z-index: -1; width: 100px; height: 100px; background-color: #E2DFD4; border-radius: 50%; text-align: center;}
+.fqContactBtn_Box:before{content: ''; position: absolute; right: 0; bottom: 50px; width: 1300px; height: 1px; background-color: var(--lightbeige);}
+.fqContactBtn_Box.move_Box{top: -25px; width: 50px; height: 50px;}
+.fqContactBtn_Box.move_Box:before{width: 0; height: 0;}
+.fqContactBtn{padding: 25px 0; width: 100%; height: 100%;}
+.fqContactBtn:before{content: ''; position: absolute; top: 10px; left: calc(50% - 4px); width: 8px; height: 8px; border-top: 2px solid #000; border-right: 2px solid #000; transform: rotate(-45deg); transition: .4s;}
+.fqContactBtn.on:before{transform: rotate(135deg); transition: .4s;}
+.fqContact_Box{display: none; padding: 40px 0; justify-content: space-between; flex-wrap: wrap;}
+.fqContact_Box.qContact_blk{ display: flex;}
 .fqContact_Box > div{display: inline-block; margin-right: 20px;}
-.fqContact_Box > .fqform_Box{width: calc(80% - 20px);}
+.fqContact_Box > .fqform_Box{width: calc(80% - 10px);}
 .fqform_Box > form{display: flex; flex-wrap: wrap;}
 .qcForm_Box{display: inline-block; margin-right: 10px; margin-bottom: 10px; width: calc(50% - 5px);}
 .qcForm_Box:nth-child(2n){margin-right: 0;}
 .qcForm_Box label{display: inline-block; width: 90px;}
-.qcForm_Box select, .qcForm_Box input{display: inline-block; padding: 10px; width: calc(100% - 120px);}
+.qcForm_Box input{display: inline-block; padding: 10px; width: calc(100% - 120px);}
+.qcForm_Box select{display: inline-block; padding: 10px; width: calc(100% - 98px);}
 .fqContact_Box > .fqSubmit_Box{width: 150px; margin-right: 0;}
 .fqSubmitBtn{padding: 38px 0; width: 100%; text-align: center; background-color: var(--brickbeige); color: #fff;}
 .fqContact_Box > .fqChk_Box{display: block; width: 100%;}
 .fqChk_Box > div{display: inline-block;}
 .chkLeft_Box{margin-right: 10px;}
+.chkLeft_Box input, .chkRight_Box input[type="checkbox"]{display: none;}
+.chkLeft_Box input[type="checkbox"] + label, .chkRight_Box input[type="checkbox"] + label{position: relative; display: inline-block; vertical-align: middle; width: 20px; height: 20px; background-color: var(--brickbeige); cursor: pointer;}
+.chkLeft_Box input[type="checkbox"] + label:after, .chkRight_Box input[type="checkbox"] + label:after{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(icon_chk.png) no-repeat top 10%  left 10%; background-size: 80%;}
+.privacyBtn{font-weight: bold; text-decoration: underline;}
 
-
+.fInfo_Container{padding-top: 40px; padding-bottom: 40px; display: flex; justify-content: space-between; background-color: #fff;}
+.fInfo_Container > div{margin-right: 20px; height: 60px;}
+.fiRmembership_Box{width: 200px; background-color: var(--lightgray);}
+.fiBranchinfo_Box{width: calc(100% - 536px); overflow: hidden;}
+.fBranchName{margin-bottom: 5px;}
+.fBranchinfo b{font-weight: bold;}
+.fInfo_Container .fiLawCopy_Box{margin-right: 0; width: 336px;}
+.fiLawList li{display: inline-block;}
+.fiLawBtn{position: relative; margin: 0 5px;}
+.fiLawBtn:before{content: ''; position: absolute; top: 4px; right: -9px; width: 1px; height: 12px; background-color: var(--darkgray);}
+.fiLawList li:first-child .fiLawBtn{margin-left: 0;}
+.fiLawList li:last-child .fiLawBtn{margin-right: 0;}
+.fiLawList li:last-child .fiLawBtn:before{opacity: 0;}
