@@ -89,6 +89,7 @@ footer {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  position: relative;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -101,7 +102,8 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+div {
   display: block;
 }
 body {

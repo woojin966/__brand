@@ -2,7 +2,6 @@ main{padding: 0;}
 .homeMain_Container1{height: 550px; background-color: var(--lightbeige);}
 .homeMain_Container1 img{display: block; width: 100%; height: 100%;}
 
-
 .homeMain_Container2{padding: 0 300px 40px; background-color: var(--pink);}
 .branchTabList{display: flex; justify-content: space-between;}
 .branchTabList li{display: inline-block; width: 25%;}

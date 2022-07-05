@@ -1,0 +1,50 @@
+.subCont_Container:first-child.minmi_Container1{padding: 0 0 80px;}
+.mC1Banner_Box{position: absolute; width: 100%; height: 450px;}
+.mC1BannerList{display: flex; width: 100%; height: 100%;}
+.mC1BannerList li{display: inline-block; width: 25%; height: 100%; overflow: hidden;}
+.mC1BannerList li:nth-child(1){background-color: var(--darkkbeige);}
+.mC1BannerList li:nth-child(2){background-color: var(--pink);}
+.mC1BannerList li:nth-child(3){background-color: var(--lightbeige);}
+.mC1BannerList li:nth-child(4){background-color: var(--brickbeige);}
+.mC1BannerList li img{position: absolute; height: auto;}
+.mC1BannerList li:nth-child(1) img{bottom: -160px; width: 90%;}
+.mC1BannerList li:nth-child(2) img{width: 110%; left: -25px; bottom: -130px;}
+.mC1BannerList li:nth-child(3) img{width: 110%; left: -20px; bottom: -170px;}
+.mC1BannerList li:nth-child(4) img{bottom: 0; width: 100%;}
+.mC1Inro_Box{padding: 530px 300px 80px; text-align: center;}
+.minmiIntroBTit{position: absolute; bottom: 20px; width: 100%; font-family: 'Yeseva One', cursive; font-size: 60px; color: #fff; text-shadow:  0 5px 5px var(--shadow); text-align: center;}
+.mC1Inro_Box .bigSentence_bold{margin-bottom: 20px;}
+.mC1Inro_Box .bigSentence_bold b{position: absolute; font-family: 'IM Fell French Canon SC', serif; font-size: 60px; color: var(--deeppink);}
+.mC1Inro_Box .bigSentence_bold b:first-child{left: 440px; bottom: 0; transform: rotate(180deg);}
+.mC1Inro_Box .bigSentence_bold b:last-child{right: 440px; top: -15px;}
+.inroHashtag_box{margin-top: 40px;}
+.inroHashtag_box p{display: inline-block; margin-right: 10px; padding: 10px 15px; border: 1px solid var(--deeppink); border-radius: 40px; color: var(--deeppink);}
+.inroHashtag_box p:last-child{margin-right: 0;}
+
+.minmi_Container2{padding: 0 300px;}
+.mC2Top_Box{padding-bottom: 40px; display: flex;}
+.mC2Top_Box > div{ width: 50%;}
+.top_LeftBox{margin-right: 20px; border-bottom: 1px solid var(--darkgray); text-align: center;}
+.top_LeftBox .subPageInnerTit{position: relative; text-align: center;}
+.top_LeftBox .subPageInnerTit:before{content: ''; position: absolute; top: 52px; left: 0; width: 90px; height: 1px; background-color: var(--darkgray);}
+.top_LeftBox .subPageInnerTit:after{content: ''; position: absolute; top: 52px; right: 0; width: 90px; height: 1px; background-color: var(--darkgray);}
+.top_LeftBox .subPageInnerTit b{font-family: 'Yeseva One', cursive; font-size: 60px; color: var(--deeppink);}
+.historyList{padding: 80px 0; display: flex; flex-direction: column; justify-content: space-between; height: calc(100% - 90px);}
+.historyList li{position: relative; padding-top: 30px;}
+.historyList li:before{content: ''; position: absolute; top: 0; left: calc(50% - 10px); width: 20px; height: 20px; box-sizing: border-box; border: 5px solid var(--deeppink); border-radius: 20px;}
+.historyList li p:first-child{margin-bottom: 10px; color: var(--deeppink);}
+.top_RightBox{margin-left: 20px;}
+.top_RightBox img{margin: 0 auto;}
+.mC2Bottom_Box{padding: 40px; border: 1px solid var(--darkgray); border-radius: 20px;}
+.bottom_TopBox{display: flex; justify-content: space-between; padding-bottom: 20px;}
+.branchList li{display: flex; padding-bottom: 10px;}
+.branchList li:nth-child(3), .branchList li:nth-child(4){display: inline-block;}
+.branchList li:nth-child(4){padding-left: 56px;}
+.branchList li p{display: inline-block;}
+.branchList li p:first-child{position: relative; width: 210px; padding-right: 20px; color: var(--deeppink);}
+.branchList li:nth-child(4) p:first-child{width: 260px;}
+.branchList li p:first-child:before{content: ''; position: absolute; top: 5px; right: 0; width: 2px; height: 20px; background-color: var(--deeppink);}
+.branchList li p:last-child{padding-left: 20px;}
+.branchJoinBtn{padding: 40px; background-color: var(--deeppink); color: #fff;}
+.bottom_BottomBox{padding-top: 20px; border-top: 1px solid var(--lightgray); text-align: center;}
+.bottom_BottomBox p{color: var(--deeppink);}
