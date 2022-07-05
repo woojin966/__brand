@@ -95,12 +95,15 @@ footer > section{padding: 0 300px; width: 100%; min-width: 1320px;}
 .chkLeft_Box{margin-right: 10px;}
 .chkLeft_Box input, .chkRight_Box input[type="checkbox"]{display: none;}
 .chkLeft_Box input[type="checkbox"] + label, .chkRight_Box input[type="checkbox"] + label{position: relative; display: inline-block; vertical-align: middle; width: 20px; height: 20px; background-color: var(--brickbeige); cursor: pointer;}
-.chkLeft_Box input[type="checkbox"] + label:after, .chkRight_Box input[type="checkbox"] + label:after{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(icon_chk.png) no-repeat top 10%  left 10%; background-size: 80%;}
+.chkLeft_Box input[type="checkbox"] + label:after, .chkRight_Box input[type="checkbox"] + label:after{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(/img/icon/icon_chk.png?raw=true) no-repeat top 10%  left 10%; background-size: 80%;}
 .privacyBtn{font-weight: bold; text-decoration: underline;}
 
-.fInfo_Container{padding-top: 40px; padding-bottom: 40px; display: flex; justify-content: space-between; background-color: #fff;}
+.fInfo_Container{padding-top: 40px; padding-bottom: 40px; display: flex; justify-content: space-between;}
 .fInfo_Container > div{margin-right: 20px; height: 60px;}
-.fiRmembership_Box{width: 200px; background-color: var(--lightgray);}
+.fiRmembership_Box{width: 200px;}
+.Rmemberhip_Btn{position: relative;  width: 100%; height: 100%; background: url(https://github.com/woojin966/_sibal_brand/blob/main/img/ftlogo.png?raw=true) no-repeat 20% 75%; background-size: cover;}
+.Rmemberhip_Btn:before{content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.3);}
+.Rmemberhip_Btn:after{content: '가맹문의'; position: absolute; top: 0; left: 0; padding: 20px 0; width: 100%; height: 100%; text-align: center; color: #fff; font-size: 16px; font-weight: bold; text-shadow: var(--shadow);}
 .fiBranchinfo_Box{width: calc(100% - 536px); overflow: hidden;}
 .fBranchName{margin-bottom: 5px;}
 .fBranchinfo b{font-weight: bold;}
