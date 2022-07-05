@@ -12,7 +12,7 @@ main{padding: 0;}
 .branchBtn_Box{padding: 20px 0 0; min-height: 153px;}
 .branchTabCont{display: none; flex-wrap: wrap;}
 .branchTabCont.currentTabCont{display: flex;}
-.branchTabCont li{width: calc(20% - 20px); margin-right: 20px; margin-bottom: 20px;}
+.branchTabCont li{width: calc(20% - 16px); margin-right: 20px; margin-bottom: 20px;}
 .branchTabCont li:nth-child(5n){margin-right: 0;}
 .branchTabCont li:nth-child(6), .branchTabCont li:nth-child(7), .branchTabCont li:nth-child(8), .branchTabCont li:nth-child(9), .branchTabCont li:nth-child(10){margin-bottom: 0;}
 .branchBtn{position: relative; padding: 16px; width: 100%; background-color: #fff; border: 1px solid var(--darkgray);}
