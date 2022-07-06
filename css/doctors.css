@@ -1,0 +1,20 @@
+main{padding-bottom: 140px;}
+
+.drTabList li{width: 25%;}
+
+.subCont_Container.doctors_Container2{padding-top: 100px;}
+.drList{display: none;}
+.drList.currentList{display: flex; flex-wrap: wrap;}
+.drList li{margin-right: 20px; margin-bottom: 20px; width: calc(33.3333% - 13.5px); background-color: var(--brickbeige_30);}
+.drList li:nth-child(3n){margin-right: 0;}
+.drCardBtn{padding: 60px 40px 40px; width: 100%; height: 100%;}
+.drPhoto_Box{width: 345px; height: 345px; background-color: #fff;}
+.drPhoto_Box img{position: absolute; bottom: 0; width: auto; height: 120%;}
+.photoTxt_Box{position: absolute; top: 20px; left: 20px; display: flex; flex-direction: column; justify-content: space-between; height: calc(100% - 40px);}
+.photoTxt_Box:before{content: ''; position: absolute; top: 45px; left: 0; width: 1px; height: calc(100% - 90px); background-color: var(--lightgray);}
+.photoTxt_Box p{color: var(--lightgray); line-height: 1.2;}
+.drName_Box{padding-top: 40px;}
+.nameTop_Box{display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 20px; border-bottom: 1px solid var(--darkkbeige);}
+.drPosition{display: inline-block; margin-left: 10px;}
+.drSuni{color: var(--darkgray);}
+.nameBottom_Box{padding-top: 20px;}
