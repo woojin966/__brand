@@ -116,35 +116,43 @@
                 <div class="subTab_Box">
                     <ul class="subTabList drTabList">
                         <li>
-                            <a class="normalSentence subTabBtn drTabBtn">서울</a>
+                            <a href="javascript:void(0)" data-tab="drTab1" class="subTabBtn drTabBtn currentTabBtn">
+                                <span class="normalSentence">서울</span>
+                            </a>
                         </li>
                         <li>
-                            <a class="normalSentence subTabBtn drTabBtn">경기·인천</a>
+                            <a href="javascript:void(0)" data-tab="drTab2" class="subTabBtn drTabBtn">
+                                <span class="normalSentence">경기·인천</span>
+                            </a>
                         </li>
                         <li>
-                            <a class="normalSentence subTabBtn drTabBtn">대전·충청</a>
+                            <a href="javascript:void(0)" data-tab="drTab3" class="subTabBtn drTabBtn">
+                                <span class="normalSentence">대전·충청</span>
+                            </a>
                         </li>
                         <li>
-                            <a class="normalSentence subTabBtn drTabBtn">부산·울산·경상</a>
+                            <a href="javascript:void(0)" data-tab="drTab4" class="subTabBtn drTabBtn">
+                                <span class="normalSentence">부산·울산·경상</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </section>
             <section class="doctors_Container2 subCont_Container">
-                <ul class="drList">
-                    <!-- <li>
+                <ul id="drTab1" class="drList currentList">
+                    <li>
                         <a class="drCardBtn">
                             <div class="drPhoto_Box">
                                 <img src="img/doctor/dr_gangnam.png" alt="minmi_drphoto">
                                 <div class="photoTxt_Box">
-                                    <p class="phtBranch">MINMI<br>GANGNAM</p>
-                                    <p class="phtName">HWAN-SEOK<br>LEE</p>
+                                    <p class="phtBranch smallSentence">MINMI<br>GANGNAM</p>
+                                    <p class="phtName smallSentence">HWAN-SEOK<br>LEE</p>
                                 </div>
                             </div>
                             <div class="drName_Box">
                                 <div class="nameTop_Box">
-                                    <p class="midSentence_bold drName">이 환 석&nbsp;&nbsp;&nbsp;&nbsp;대표원장</p>
-                                    <p class="normalSentence drSuni">서울대병원 동문 의료진</p>
+                                    <p class="midSentence_bold drName">이 환 석<span class="midSentence_bold drPosition">대표원장</span></p>
+                                    <p class="normalSentence drSuni">서울대병원 동문의료진</p>
                                 </div>
                                 <div class="nameBottom_Box">
                                     <p class="normalSentence">미앤미 강남본점</p>
@@ -157,13 +165,13 @@
                             <div class="drPhoto_Box">
                                 <img src="img/doctor/dr_gangnam2.png" alt="minmi_drphoto">
                                 <div class="photoTxt_Box">
-                                    <p class="phtBranch">MINMI<br>GANGNAM</p>
-                                    <p class="phtName">JU-HAN<br>KIM</p>
+                                    <p class="phtBranch smallSentence">MINMI<br>GANGNAM</p>
+                                    <p class="phtName smallSentence">JU-HAN<br>KIM</p>
                                 </div>
                             </div>
                             <div class="drName_Box">
                                 <div class="nameTop_Box">
-                                    <p class="midSentence_bold drName">김 주 한&nbsp;&nbsp;&nbsp;&nbsp;진료원장</p>
+                                    <p class="midSentence_bold drName">김 주 한<span class="midSentence_bold drPosition">진료원장</span></p>
                                 </div>
                                 <div class="nameBottom_Box">
                                     <p class="normalSentence">미앤미 강남본점</p>
@@ -176,13 +184,13 @@
                             <div class="drPhoto_Box">
                                 <img src="img/doctor/dr_nowon.png" alt="minmi_drphoto">
                                 <div class="photoTxt_Box">
-                                    <p class="phtBranch">MINMI<br>NOWON</p>
-                                    <p class="phtName">DO-HEON<br>JEOUNG</p>
+                                    <p class="phtBranch smallSentence">MINMI<br>NOWON</p>
+                                    <p class="phtName smallSentence">DO-HEON<br>JEOUNG</p>
                                 </div>
                             </div>
                             <div class="drName_Box">
                                 <div class="nameTop_Box">
-                                    <p class="midSentence_bold drName">정 도 헌&nbsp;&nbsp;&nbsp;&nbsp;대표원장</p>
+                                    <p class="midSentence_bold drName">정 도 헌<span class="midSentence_bold drPosition">대표원장</span></p>
                                 </div>
                                 <div class="nameBottom_Box">
                                     <p class="normalSentence">미앤미 노원점</p>
@@ -195,13 +203,13 @@
                             <div class="drPhoto_Box">
                                 <img src="img/doctor/dr_sinchon.png" alt="minmi_drphoto">
                                 <div class="photoTxt_Box">
-                                    <p class="phtBranch">MINMI<br>SINCHON</p>
-                                    <p class="phtName">GWANG-O<br>SO</p>
+                                    <p class="phtBranch smallSentence">MINMI<br>SINCHON</p>
+                                    <p class="phtName smallSentence">GWANG-O<br>SO</p>
                                 </div>
                             </div>
                             <div class="drName_Box">
                                 <div class="nameTop_Box">
-                                    <p class="midSentence_bold drName">소 광 오&nbsp;&nbsp;&nbsp;&nbsp;대표원장</p>
+                                    <p class="midSentence_bold drName">소 광 오<span class="midSentence_bold drPosition">대표원장</span></p>
                                 </div>
                                 <div class="nameBottom_Box">
                                     <p class="normalSentence">미앤미 신촌점</p>
@@ -214,20 +222,426 @@
                             <div class="drPhoto_Box">
                                 <img src="img/doctor/dr_cheonho.png" alt="minmi_drphoto">
                                 <div class="photoTxt_Box">
-                                    <p class="phtBranch">MINMI<br>CHEONHO</p>
-                                    <p class="phtName">HYUN-JEONG<br>PARK</p>
+                                    <p class="phtBranch smallSentence">MINMI<br>CHEONHO</p>
+                                    <p class="phtName smallSentence">HYUN-JEONG<br>PARK</p>
                                 </div>
                             </div>
                             <div class="drName_Box">
                                 <div class="nameTop_Box">
-                                    <p class="midSentence_bold drName">박 현 정&nbsp;&nbsp;&nbsp;&nbsp;대표원장</p>
+                                    <p class="midSentence_bold drName">박 현 정<span class="midSentence_bold drPosition">대표원장</span></p>
                                 </div>
                                 <div class="nameBottom_Box">
                                     <p class="normalSentence">미앤미 천호점</p>
                                 </div>
                             </div>
                         </a>
-                    </li> -->
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_yeongdeungpo.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>YEONGDEUGPO</p>
+                                    <p class="phtName smallSentence">JAE-HUN<br>KIM</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">김 재 훈<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 천호점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_suyu.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>SUYU</p>
+                                    <p class="phtName smallSentence">HYUONG-CHEOL<br>LEE</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">이 형 철<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 수유점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_myeongdong.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>MYEONGDONG</p>
+                                    <p class="phtName smallSentence">BEOM-SEOK<br>KIM</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">김 범 석<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 명동점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_wangsimni.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>WANGSIMNI</p>
+                                    <p class="phtName smallSentence">JAE-WU<br>PARK</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">박 재 우<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 왕십리점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_gangseo.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>GANGSEO</p>
+                                    <p class="phtName smallSentence">JIN-O<br>BAEK</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">백 진 오<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 강서점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_seouluni.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>SEOUL UNIV.</p>
+                                    <p class="phtName smallSentence">SUN-JAE<br>HWANG</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">황 순 재<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 서울대입구점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="drTab2" class="drList">
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_bundang.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>BUNDANG</p>
+                                    <p class="phtName smallSentence">IN-HO<br>KIM</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">김 인 호<span class="midSentence_bold drPosition">대표원장</span></p>
+                                    <p class="normalSentence drSuni">서울대병원 동문의료진</p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 분당점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_suwon.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>SUWON</p>
+                                    <p class="phtName smallSentence">BEOM-HOI<br>KIM</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">김 범 회<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 수원점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_ilsan.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>ILSAN</p>
+                                    <p class="phtName smallSentence">WON-JUN<br>CHOI</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">최 원 준<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 일산점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_bupyeong.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>BUPYEONG</p>
+                                    <p class="phtName smallSentence">DO-WON<br>SEO</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">서 도 원<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 부평점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_pyeongchon.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>PYEONGCHON</p>
+                                    <p class="phtName smallSentence">DAE-HO<br>KIM</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">김 대 호<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 평촌점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_bucheon.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>BUCHEON</p>
+                                    <p class="phtName smallSentence">HYEOK-CHAN<br>KIM</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">김 혁 찬<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 부천점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_ansan1.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>ANSAN</p>
+                                    <p class="phtName smallSentence">WON-SEOK<br>O</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">오 원 석</p><span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 안산점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_ansan2.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>ANSAN</p>
+                                    <p class="phtName smallSentence">JI-EUN<br>CHOI</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">최 지 은<span class="midSentence_bold drPosition">진료원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 안산점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_guwol.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>GUWOL</p>
+                                    <p class="phtName smallSentence">GEON-WU<br>O</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">오 건 우<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 구월점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_gwangmyeong.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>GWANGMYEONG</p>
+                                    <p class="phtName smallSentence">SANG-WON<br>LEE</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">이 상 원<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 광명점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_pyeongtaek.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>PYEONGTAEK</p>
+                                    <p class="phtName smallSentence">JUN-GYU<br>LIM</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">임 준 규<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 평택점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="drTab3" class="drList">
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_cheonan.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>CHEONAN</p>
+                                    <p class="phtName smallSentence">SEUNG-YOUNG<br>BAE</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">배 승 영<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 천안점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="drTab4" class="drList">
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_cheonan.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>SEOMYEON</p>
+                                    <p class="phtName smallSentence">KWANG-HYEON<br>KIM</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">김 광 현<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 부산서면점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_ulsan.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>ULSAN</p>
+                                    <p class="phtName smallSentence">HONG-SEOK<br>LEE</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">이 홍 석<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 울산점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_centeom.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch smallSentence">MINMI<br>Centum C.</p>
+                                    <p class="phtName smallSentence">HONG-SEOK<br>LEE</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">강 현 섭<span class="midSentence_bold drPosition">대표원장</span></p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 부산센텀시티점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </section>
         </main>
@@ -451,40 +865,40 @@
 
     <script>
         $(document).ready(function(){
-            $.ajax({
-                dataType: "json",
-                url: "https://github.com/woojin966/__brand/blob/main/JSON/drProfile.json",
-                mimeType: "application/json",
-                success: function(result){
-                    var doctorData = "";
+            // $.ajax({
+            //     dataType: "json",
+            //     url: "https://github.com/woojin966/__brand/blob/main/JSON/drProfile.json",
+            //     mimeType: "application/json",
+            //     success: function(result){
+            //         var doctorData = "";
 
-                    $.each(result, function(index, value) {
-                        doctorData += '<li>';
-                        doctorData += '<a class="drCardBtn">';
-                        doctorData += '<div class="drPhoto_Box">';
-                        doctorData += '<img src='+value.drPhoto+' alt="minmi_drphoto">';
-                        doctorData += '<div class="photoTxt_Box">';
-                        doctorData += '<div class="photoTxt_Box">';
-                        doctorData += '<p class="phtBranch">'+value.phtBranch+'</p>';
-                        doctorData += '<p class="phtName">'+value.phtName+'</p>';
-                        doctorData += '</div>';
-                        doctorData += '</div>';
-                        doctorData += '<div class="drName_Box">';
-                        doctorData += '<div class="nameTop_Box">';
-                        doctorData += '<p class="midSentence_bold drName">'+value.drName+'<span class="midSentence_bold drPosition">'+value.drPosition+'</span></p>';
-                        doctorData += '<p class="normalSentence drSuni">'+value.IsSuni+'</p>';
-                        doctorData += '</div>';
-                        doctorData += '<div class="nameBottom_Box">';
-                        doctorData += '<p class="normalSentence">'+value.drBranch+'</p>';
-                        doctorData += '</div>';
-                        doctorData += '</div>';
-                        doctorData += '</a>';
-                        doctorData += '</li>';
-                    });
+            //         $.each(result, function(index, value) {
+            //             doctorData += '<li>';
+            //             doctorData += '<a class="drCardBtn">';
+            //             doctorData += '<div class="drPhoto_Box">';
+            //             doctorData += '<img src='+value.drPhoto+' alt="minmi_drphoto">';
+            //             doctorData += '<div class="photoTxt_Box">';
+            //             doctorData += '<div class="photoTxt_Box">';
+            //             doctorData += '<p class="phtBranch">'+value.phtBranch+'</p>';
+            //             doctorData += '<p class="phtName">'+value.phtName+'</p>';
+            //             doctorData += '</div>';
+            //             doctorData += '</div>';
+            //             doctorData += '<div class="drName_Box">';
+            //             doctorData += '<div class="nameTop_Box">';
+            //             doctorData += '<p class="midSentence_bold drName">'+value.drName+'<span class="midSentence_bold drPosition">'+value.drPosition+'</span></p>';
+            //             doctorData += '<p class="normalSentence drSuni">'+value.IsSuni+'</p>';
+            //             doctorData += '</div>';
+            //             doctorData += '<div class="nameBottom_Box">';
+            //             doctorData += '<p class="normalSentence">'+value.drBranch+'</p>';
+            //             doctorData += '</div>';
+            //             doctorData += '</div>';
+            //             doctorData += '</a>';
+            //             doctorData += '</li>';
+            //         });
 
-                    $(".drList").append(doctorData);
-                }
-            });
+            //         $(".drList").append(doctorData);
+            //     }
+            // });
         });
     </script>
 </body>
