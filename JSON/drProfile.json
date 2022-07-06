@@ -1,0 +1,21 @@
+Params = [{
+    "phtBranch" : "MINMI<br>\nGANGNAM",
+    "phtName" : "HWAN-SEOK<br>nLEE",
+    "drPhoto" : "img/doctor/dr_gangnam.png",
+    "drName" : "이 환 석",
+    "drPosition" : "대표원장",
+    "IsSuni" : "서울대병원 동문의료진",
+    "drBranch" : "미앤미 강님"
+},{
+    "phtBranch" : "MINMI\nGANGNAM",
+    "phtName" : "JU-HAN\nKIM",
+    "drPhoto" : "img/doctor/dr_gangnam2.png",
+    "drName" : "김 주 한",
+    "drPosition" : "진료원장",
+    "IsSuni" : "",
+    "drBranch" : "미앤미 강님"
+}
+]
+
+let drProfile = JSON.parse(JSON.stringify(Params));
+console.log(drProfile);
