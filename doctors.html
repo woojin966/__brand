@@ -450,40 +450,42 @@
     </footer>
 
     <script>
-        $.ajax({
-        dataType: "json",
-        url: "JSON/drProfile.json",
-        mimeType: "application/json",
-        success: function(result){
-            var doctorData = "";
+        $(document).ready(function(){
+            $.ajax({
+                dataType: "json",
+                url: "JSON/drProfile.json",
+                mimeType: "application/json",
+                success: function(result){
+                    var doctorData = "";
 
-            $.each(result, function(index, value) {
-                doctorData += '<li>';
-                doctorData += '<a class="drCardBtn">';
-                doctorData += '<div class="drPhoto_Box">';
-                doctorData += '<img src='+value.drPhoto+' alt="minmi_drphoto">';
-                doctorData += '<div class="photoTxt_Box">';
-                doctorData += '<div class="photoTxt_Box">';
-                doctorData += '<p class="phtBranch">'+value.phtBranch+'</p>';
-                doctorData += '<p class="phtName">'+value.phtName+'</p>';
-                doctorData += '</div>';
-                doctorData += '</div>';
-                doctorData += '<div class="drName_Box">';
-                doctorData += '<div class="nameTop_Box">';
-                doctorData += '<p class="midSentence_bold drName">'+value.drName+'<span class="midSentence_bold drPosition">'+value.drPosition+'</span></p>';
-                doctorData += '<p class="normalSentence drSuni">'+value.IsSuni+'</p>';
-                doctorData += '</div>';
-                doctorData += '<div class="nameBottom_Box">';
-                doctorData += '<p class="normalSentence">'+value.drBranch+'</p>';
-                doctorData += '</div>';
-                doctorData += '</div>';
-                doctorData += '</a>';
-                doctorData += '</li>';
+                    $.each(result, function(index, value) {
+                        doctorData += '<li>';
+                        doctorData += '<a class="drCardBtn">';
+                        doctorData += '<div class="drPhoto_Box">';
+                        doctorData += '<img src='+value.drPhoto+' alt="minmi_drphoto">';
+                        doctorData += '<div class="photoTxt_Box">';
+                        doctorData += '<div class="photoTxt_Box">';
+                        doctorData += '<p class="phtBranch">'+value.phtBranch+'</p>';
+                        doctorData += '<p class="phtName">'+value.phtName+'</p>';
+                        doctorData += '</div>';
+                        doctorData += '</div>';
+                        doctorData += '<div class="drName_Box">';
+                        doctorData += '<div class="nameTop_Box">';
+                        doctorData += '<p class="midSentence_bold drName">'+value.drName+'<span class="midSentence_bold drPosition">'+value.drPosition+'</span></p>';
+                        doctorData += '<p class="normalSentence drSuni">'+value.IsSuni+'</p>';
+                        doctorData += '</div>';
+                        doctorData += '<div class="nameBottom_Box">';
+                        doctorData += '<p class="normalSentence">'+value.drBranch+'</p>';
+                        doctorData += '</div>';
+                        doctorData += '</div>';
+                        doctorData += '</a>';
+                        doctorData += '</li>';
+                    });
+
+                    $(".drList").append(doctorData);
+                }
             });
-
-            $(".drList").append(doctorData);
-        }
-    });
+        });
     </script>
 </body>
 </html>
