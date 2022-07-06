@@ -1,4 +1,4 @@
-[{
+Params = [{
     "phtBranch" : "MINMI<br>\nGANGNAM",
     "phtName" : "HWAN-SEOK<br>nLEE",
     "drPhoto" : "img/doctor/dr_gangnam.png",
@@ -17,3 +17,5 @@
 }
 ]
 
+let drProfile = JSON.parse(JSON.stringify(Params));
+console.log(drProfile);
