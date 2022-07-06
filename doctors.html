@@ -109,10 +109,127 @@
         </header>
         <main class="subMain">
             <section class="doctors_Container1 subCont_Container subCont_Banner">
-                <div class=""></div>
-                <div class=""></div>
+                <div class="subBanner_Box">
+                    <p class="subPageTit">의료진 소개</p>
+                    <p class="bigSentence">미앤미의원의 우수한 의료진을 소개합니다.</p>
+                </div>
+                <div class="subTab_Box">
+                    <ul class="subTabList drTabList">
+                        <li>
+                            <a class="normalSentence subTabBtn drTabBtn">서울</a>
+                        </li>
+                        <li>
+                            <a class="normalSentence subTabBtn drTabBtn">경기·인천</a>
+                        </li>
+                        <li>
+                            <a class="normalSentence subTabBtn drTabBtn">대전·충청</a>
+                        </li>
+                        <li>
+                            <a class="normalSentence subTabBtn drTabBtn">부산·울산·경상</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section class="doctors_Container2 subCont_Container"></section>
+            <section class="doctors_Container2 subCont_Container">
+                <ul class="drList">
+                    <!-- <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_gangnam.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch">MINMI<br>GANGNAM</p>
+                                    <p class="phtName">HWAN-SEOK<br>LEE</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">이 환 석&nbsp;&nbsp;&nbsp;&nbsp;대표원장</p>
+                                    <p class="normalSentence drSuni">서울대병원 동문 의료진</p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 강남본점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_gangnam2.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch">MINMI<br>GANGNAM</p>
+                                    <p class="phtName">JU-HAN<br>KIM</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">김 주 한&nbsp;&nbsp;&nbsp;&nbsp;진료원장</p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 강남본점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_nowon.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch">MINMI<br>NOWON</p>
+                                    <p class="phtName">DO-HEON<br>JEOUNG</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">정 도 헌&nbsp;&nbsp;&nbsp;&nbsp;대표원장</p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 노원점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_sinchon.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch">MINMI<br>SINCHON</p>
+                                    <p class="phtName">GWANG-O<br>SO</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">소 광 오&nbsp;&nbsp;&nbsp;&nbsp;대표원장</p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 신촌점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="drCardBtn">
+                            <div class="drPhoto_Box">
+                                <img src="img/doctor/dr_cheonho.png" alt="minmi_drphoto">
+                                <div class="photoTxt_Box">
+                                    <p class="phtBranch">MINMI<br>CHEONHO</p>
+                                    <p class="phtName">HYUN-JEONG<br>PARK</p>
+                                </div>
+                            </div>
+                            <div class="drName_Box">
+                                <div class="nameTop_Box">
+                                    <p class="midSentence_bold drName">박 현 정&nbsp;&nbsp;&nbsp;&nbsp;대표원장</p>
+                                </div>
+                                <div class="nameBottom_Box">
+                                    <p class="normalSentence">미앤미 천호점</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li> -->
+                </ul>
+            </section>
         </main>
     </article>
     <footer>
@@ -331,5 +448,38 @@
             </div>
         </section>
     </footer>
+
+    <script>
+        $.ajax({
+        dataType: "json",
+        url: "JSON/drProfile.json",
+        mimeType: "application/json",
+        success: function(result){
+            var doctorData = "";
+
+            $.each(result, function(index, value) {
+                doctorData += '<li>';
+                doctorData += '<a class="drCardBtn">';
+                doctorData += '<div class="drPhoto_Box">';
+                doctorData += '<img src='+value.drPhoto+' alt="minmi_drphoto">';
+                doctorData += '<div class="photoTxt_Box">';
+                doctorData += '<div class="photoTxt_Box">';
+                doctorData += '<p class="phtBranch">'+value.phtBranch+'</p>';
+                doctorData += '<p class="phtName">'+value.phtName+'</p>';
+                doctorData += '</div>';
+                doctorData += '</div>';
+                doctorData += '<div class="drName_Box">';
+                doctorData += '<div class="nameTop_Box">';
+                doctorData += '<p class="midSentence_bold drName">'+value.drName+'<span class="midSentence_bold drPosition">'+value.drPosition+'</span></p>';
+                doctorData += '<p class="normalSentence drSuni">'+value.IsSuni+'</p>';
+                doctorData += '</div>';
+                doctorData += '<div class="nameBottom_Box">';
+                doctorData += '<p class="normalSentence">'+value.drBranch+'</p>';
+            });
+
+            $(".drList").append(doctorData);
+        }
+    });
+    </script>
 </body>
 </html>
