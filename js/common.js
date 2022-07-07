@@ -65,4 +65,53 @@ $(document).ready(function(){
         },
         loop: true,
     });
+
+    //sub tab active
+    $('.currentTabBtn').css({ 'pointer-events': 'none' });
+    $('.subTabBtn').on('click', function(e){
+        var ACT_SUBTAB = $(this);
+        var subTab_DATA = ACT_SUBTAB.attr('data-tab');
+        var subTab_SUBLIST = ACT_SUBTAB.next('.stabSubList');
+        var subTAB_SUBBTN = subTab_SUBLIST.find('.stabSubBtn_first');
+        var subTabsubbtn_DATA = subTAB_SUBBTN.attr('data-stab');
+        var ACT_TABCONT = $('#' + subTab_DATA);
+        var ACT_sTABCONT = $('#' + subTabsubbtn_DATA);
+
+        if(ACT_SUBTAB.hasClass('currentTabBtn')){
+            ACT_SUBTAB.removeClass('currentTabBtn').css({ 'pointer-events': 'auto' });
+            ACT_TABCONT.removeClass('currentListCont');
+            subTab_SUBLIST.removeClass('currebtTabList');
+            subTAB_SUBBTN.removeClass('currentsTabBtn').css({ 'pointer-events': 'auto' });
+            ACT_sTABCONT.removeClass('currentListCont');
+        }else{
+            $('.currentTabBtn').removeClass('currentTabBtn').css({ 'pointer-events': 'auto' });
+            $('.currentListCont').removeClass('currentListCont');
+            $('.currebtTabList').removeClass('currebtTabList');
+            $('.currentsTabBtn').removeClass('currentsTabBtn').css({ 'pointer-events': 'auto' });
+            ACT_SUBTAB.addClass('currentTabBtn').css({ 'pointer-events': 'none' });
+            ACT_TABCONT.addClass('currentListCont');
+            subTab_SUBLIST.addClass('currebtTabList');
+            subTAB_SUBBTN.addClass('currentsTabBtn').css({ 'pointer-events': 'none' });
+            ACT_sTABCONT.addClass('currentListCont');
+        }
+    });
+    //subtab sublist active
+    $('.currentsTabBtn').css({ 'pointer-events': 'none' });
+    $('.stabSubBtn').on('click', function(){
+        var ACT_sSUB = $(this);
+        var ssTab_DATA = ACT_sSUB.attr('data-stab');
+        //var PARENT_TAB = ACT_sSUB.closest('.subTabBtn');
+        var ACT_TABCONT = $('#' + ssTab_DATA);
+        if(ACT_sSUB.hasClass('currentsTabBtn')){
+            ACT_sSUB.removeClass('currentsTabBtn').css({ 'pointer-events': 'auto' });
+            ACT_TABCONT.removeClass('currentListCont');
+        }else{
+            $('.currentsTabBtn').removeClass('currentsTabBtn').css({ 'pointer-events': 'auto' });
+            $('.currentListCont').removeClass('currentListCont');
+            ACT_sSUB.addClass('currentsTabBtn').css({ 'pointer-events': 'none' });
+            ACT_TABCONT.addClass('currentListCont');
+            //PARENT_TAB.addClass('currentTabBtn');
+        }
+    });
+    
 });

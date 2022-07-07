@@ -47,7 +47,7 @@
                                     <a href="doctors.html" class="menu2Dp normalSentence">의료진 소개</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" class="menu2Dp normalSentence">지점 소개</a>
+                                    <a href="branch.html" class="menu2Dp normalSentence">지점 소개</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)" class="menu2Dp normalSentence">인재 채용</a>
@@ -432,18 +432,19 @@
     <script>
         $(document).ready(function(){
             //main branch tab active
+            $('.currentTab').css({ 'pointer-events': 'none' });
             $('.branchTab').on('click', function(){
                 var ACT_BRANCHTAB = $(this);
                 var actTab_DATA = ACT_BRANCHTAB.attr('data-tab');
                 var ACT_BRANCHLIST = $('#' + actTab_DATA);
 
                 if(ACT_BRANCHTAB.hasClass('currentTab')){
-                    ACT_BRANCHTAB.removeClass('currentTab');
+                    ACT_BRANCHTAB.removeClass('currentTab').css({ 'pointer-events': 'auto' });
                     ACT_BRANCHLIST.removeClass('currentTabCont');
                 }else{
-                    $('.currentTab').removeClass('currentTab');
+                    $('.currentTab').removeClass('currentTab').css({ 'pointer-events': 'auto' });
                     $('.currentTabCont').removeClass('currentTabCont');
-                    ACT_BRANCHTAB.addClass('currentTab');
+                    ACT_BRANCHTAB.addClass('currentTab').css({ 'pointer-events': 'none' });
                     ACT_BRANCHLIST.addClass('currentTabCont');
                 }
             });
