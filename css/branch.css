@@ -1,29 +1,39 @@
 .branch_Container1{z-index: 1;}
 
 .bchsubTabList_1{left: -300px;}
-.bchsubTabList_2{left: -625px;}
-.bchsubTabList_3{left: -950px;}
-.bchsubTabList_4{left: -1275px;}
+.bchsubTabList_2{left: -626px;}
+.bchsubTabList_3{left: -952px;}
+.bchsubTabList_4{left: -1277px;}
 .branchTabList li{width: 25%;}
 .bchsubTabList_1 li, .bchsubTabList_2 li{width: 10%;}
 .bchsubTabList_3 li{width: 100%;}
 .bchsubTabList_4 li{width: 33.3333%;}
 
 .subCont_Container.branch_Container2{padding-top: 145px;}
+.subCont_Container .branchListCont{padding: 0;}
+.branchListCont > div{padding: 0 300px;}
 .bCTitle_Box{display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;}
 .titleBtn_Box a{padding: 10px 0; width: 120px; background-color: var(--deeppink); color: #fff; text-align: center;}
 .bchHomeBtn{margin-right: 10px;}
-.bCProfile_Box{display: flex; height: 670px;}
-.bCProfile_Box:before{content: ''; position: absolute; left: -300px; top: 0; width: 1903px; min-width: 1900px; height: 100%; background-color: var(--brickbeige_30);}
-.bCProfile_Box > div{width: 50%;}
+.bCProfile_Box{display: flex; height: 738px; overflow: hidden;}
+.bCProfile_Box:before{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 670px; background-color: var(--brickbeige_30);}
+.pfPhoto_Box, .pfCareer_Box{width: 50%;}
+.pfPhoto_Box{height: 670px;}
 .pfPhoto_Box img{position: absolute; bottom: 0; width: 90%;}
 .pfCareer_Box{padding: 40px; background-color: #fff; position: absolute; right: 0; top: 80px; height: 650px; box-shadow: 3px 3px 8px rgb(0 0 0 / 15%);}
+.bCProfile_Box > .pfCareer_Box{width: 650px; right: 300px}
 .careerTop_Box{display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--darkkbeige);}
 .careerBottom_Box p{position: relative; padding-left: 10px; line-height: 2;}
+.careerBottom_Box.careerFlexHalf{display: flex; flex-direction: row; flex-wrap: wrap;}
+.careerBottom_Box.careerFlexHalf p{width: 50%;}
 .careerBottom_Box p:before{content: ''; position: absolute; top: calc(50% - 2.5px); left: 0; width: 5px; height: 5px; border-radius: 5px; background-color: var(--pink);}
 .branchWatermark{position: absolute; bottom: 40px; right: 40px; color: var(--lightbeige);}
+.swiper-button-prev, .swiper-button-next{top: calc(50% - 60px); width: 60px; height: 60px; border: 1px solid var(--darkgray); color: #000000; background-color: rgba(255,255,255,.4);}
+.swiper-button-prev{left: 0;}
+.swiper-button-next{right: 0;}
+:root {--swiper-navigation-size: 36px;}
 
-.bCMap_Box{padding-top: 100px; display: flex; flex-wrap: wrap;}
+.branchListCont .bCMap_Box{padding-top: 100px; display: flex; flex-wrap: wrap;}
 .bCMap_Box > .subPageInnerTit{margin-bottom: 40px; width: 100%;}
 .bCMap_Box > div{width: 50%;}
 .mapLeft_Box{height: 650px;}
@@ -33,8 +43,8 @@
 .branchinfoTitle{margin-bottom: 10px; color: var(--deeppink);}
 .branchinfoTime{line-height: 2;}
 .branchinfoTime span{display: inline-block; width: 140px; letter-spacing: 2px;}
-.branchCallKakao a{position: relative; padding-left: 40px;}
-.branchCallKakao a:before{content: ''; position: absolute; top: 0; left: 0; width: 30px; height: 30px;}
+.branchCallKakao a{position: relative; padding-left: 45px; color: var(--deeppink);}
+.branchCallKakao a:before{content: ''; position: absolute; top: 0; left: 0; width: 36px; height: 36px;}
 .branchCall{margin-right: 40px;}
-.branchCall:before{background: var(--deeppink) url('/img/icon/callIcon.png') no-repeat; background-size: contain; border-radius: 5px;}
-.branchKakao:before{background: url('/img/icon/kakaoIcon.png') no-repeat; background-size: contain;}
+.branchCall:before{background: var(--deeppink) url(https://github.com/woojin966/__brand/blob/main/img/icon/callIcon.png?raw=true) no-repeat center center; background-size: 80%; border-radius: 5px;}
+.branchKakao:before{background: url(https://github.com/woojin966/__brand/blob/main/img/icon/kakaoIcon.png?raw=true) no-repeat; background-size: contain;}
