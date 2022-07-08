@@ -13,3 +13,28 @@
 .bCTitle_Box{display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;}
 .titleBtn_Box a{padding: 10px 0; width: 120px; background-color: var(--deeppink); color: #fff; text-align: center;}
 .bchHomeBtn{margin-right: 10px;}
+.bCProfile_Box{display: flex; height: 670px;}
+.bCProfile_Box:before{content: ''; position: absolute; left: -300px; top: 0; width: 1903px; min-width: 1900px; height: 100%; background-color: var(--brickbeige_30);}
+.bCProfile_Box > div{width: 50%;}
+.pfPhoto_Box img{position: absolute; bottom: 0; width: 90%;}
+.pfCareer_Box{padding: 40px; background-color: #fff; position: absolute; right: 0; top: 80px; height: 650px; box-shadow: 3px 3px 8px rgb(0 0 0 / 15%);}
+.careerTop_Box{display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--darkkbeige);}
+.careerBottom_Box p{position: relative; padding-left: 10px; line-height: 2;}
+.careerBottom_Box p:before{content: ''; position: absolute; top: calc(50% - 2.5px); left: 0; width: 5px; height: 5px; border-radius: 5px; background-color: var(--pink);}
+.branchWatermark{position: absolute; bottom: 40px; right: 40px; color: var(--lightbeige);}
+
+.bCMap_Box{padding-top: 100px; display: flex; flex-wrap: wrap;}
+.bCMap_Box > .subPageInnerTit{margin-bottom: 40px; width: 100%;}
+.bCMap_Box > div{width: 50%;}
+.mapLeft_Box{height: 650px;}
+.mapRight_Box{padding-left: 40px;}
+.branchInfoList li{margin-bottom: 40px;}
+.branchInfoList li:last-child{margin-bottom: 0;}
+.branchinfoTitle{margin-bottom: 10px; color: var(--deeppink);}
+.branchinfoTime{line-height: 2;}
+.branchinfoTime span{display: inline-block; width: 140px; letter-spacing: 2px;}
+.branchCallKakao a{position: relative; padding-left: 40px;}
+.branchCallKakao a:before{content: ''; position: absolute; top: 0; left: 0; width: 30px; height: 30px;}
+.branchCall{margin-right: 40px;}
+.branchCall:before{background: var(--deeppink) url('/img/icon/callIcon.png') no-repeat; background-size: contain; border-radius: 5px;}
+.branchKakao:before{background: url('/img/icon/kakaoIcon.png') no-repeat; background-size: contain;}
