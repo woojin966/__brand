@@ -1,5 +1,5 @@
 .subCont_Container:first-child.minmi_Container1{padding: 0 0 80px;}
-.mC1Banner_Box{position: absolute; width: 100%; height: 450px;}
+.subCont_Container .mC1Banner_Box{position: absolute; padding: 0; width: 100%; height: 450px;}
 .mC1BannerList{display: flex; width: 100%; height: 100%;}
 .mC1BannerList li{display: inline-block; width: 25%; height: 100%; overflow: hidden;}
 .mC1BannerList li:nth-child(1){background-color: var(--darkkbeige);}
@@ -11,7 +11,7 @@
 .mC1BannerList li:nth-child(2) img{width: 110%; left: -25px; bottom: -130px;}
 .mC1BannerList li:nth-child(3) img{width: 110%; left: -20px; bottom: -170px;}
 .mC1BannerList li:nth-child(4) img{bottom: 0; width: 100%;}
-.mC1Inro_Box{padding: 530px 300px 80px; text-align: center;}
+.subCont_Container .mC1Inro_Box{padding: 530px 300px 80px; text-align: center;}
 .minmiIntroBTit{position: absolute; bottom: 20px; width: 100%; font-family: 'Yeseva One', cursive; font-size: 60px; color: #fff; text-shadow:  0 5px 5px var(--shadow); text-align: center;}
 .mC1Inro_Box .bigSentence_bold{margin-bottom: 20px;}
 .mC1Inro_Box .bigSentence_bold b{position: absolute; font-family: 'IM Fell French Canon SC', serif; font-size: 60px; color: var(--deeppink);}
@@ -21,8 +21,8 @@
 .inroHashtag_box p{display: inline-block; margin-right: 10px; padding: 10px 15px; border: 1px solid var(--deeppink); border-radius: 40px; color: var(--deeppink);}
 .inroHashtag_box p:last-child{margin-right: 0;}
 
-.minmi_Container2{padding: 0 300px;}
-.mC2Top_Box{padding-bottom: 40px; display: flex;}
+.subCont_Container.minmi_Container2{padding: 0 300px;}
+.subCont_Container .mC2Top_Box{padding: 0 0 40px; display: flex;}
 .mC2Top_Box > div{ width: 50%;}
 .top_LeftBox{margin-right: 20px; border-bottom: 1px solid var(--darkgray); text-align: center;}
 .top_LeftBox .subPageInnerTit{position: relative; text-align: center;}
@@ -35,7 +35,7 @@
 .historyList li p:first-child{margin-bottom: 10px; color: var(--deeppink);}
 .top_RightBox{margin-left: 20px;}
 .top_RightBox img{margin: 0 auto;}
-.mC2Bottom_Box{padding: 40px; border: 1px solid var(--darkgray); border-radius: 20px;}
+.subCont_Container .mC2Bottom_Box{padding: 40px; border: 1px solid var(--darkgray); border-radius: 20px;}
 .bottom_TopBox{display: flex; justify-content: space-between; padding-bottom: 20px;}
 .branchList li{display: flex; padding-bottom: 10px;}
 .branchList li:nth-child(3), .branchList li:nth-child(4){display: inline-block;}
