@@ -68,7 +68,7 @@ $(document).ready(function(){
 
     //sub tab active
     $('.currentTabBtn').css({ 'pointer-events': 'none' });
-    $('.subTabBtn').on('click', function(e){
+    $('.subTabBtn').on('click', function(){
         var ACT_SUBTAB = $(this);
         var subTab_DATA = ACT_SUBTAB.attr('data-tab');
         var subTab_SUBLIST = ACT_SUBTAB.next('.stabSubList');

@@ -25,7 +25,7 @@
 .careerTop_Box{display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--darkkbeige);}
 .careerBottom_Box p{position: relative; padding-left: 10px; line-height: 2;}
 .careerBottom_Box.careerFlexHalf{display: flex; flex-direction: row; flex-wrap: wrap;}
-.careerBottom_Box.careerFlexHalf p{width: 50%;}
+.careerBottom_Box.careerFlexHalf p{width: 50%; letter-spacing: -2px;}
 .careerBottom_Box p:before{content: ''; position: absolute; top: calc(50% - 2.5px); left: 0; width: 5px; height: 5px; border-radius: 5px; background-color: var(--pink);}
 .branchWatermark{position: absolute; bottom: 40px; right: 40px; color: var(--lightbeige);}
 .swiper-button-prev, .swiper-button-next{top: calc(50% - 60px); width: 60px; height: 60px; border: 1px solid var(--darkgray); color: #000000; background-color: rgba(255,255,255,.4);}
