@@ -1,0 +1,34 @@
+.eventBtn{display: flex; margin-bottom: 20px; height: 270px; border: 1px solid var(--darkgray);}
+.eventList li:last-child .eventBtn{margin-bottom: 0;}
+.eventBtn > div{width: 50%; height: 100%; overflow: hidden;}
+.thumb_Box img{position: relative; top: -10px; width: 100%;}
+.thumb_Box img.img150{top: 0; left: -150px; width: 150%;}
+.detail_Box{padding: 40px;}
+.pinkLabel{display: inline-block; padding: 5px 10px; margin-bottom: 10px; border: 1px solid var(--deeppink); color: var(--deeppink);}
+.eventDate{margin-bottom: 40px; color: var(--darkgray);}
+.evnetTitle{padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid var(--darkkbeige);}
+.evnetMore{position: relative; padding-right: 10px; text-align: right;}
+.evnetMore:before{content: ''; position: absolute; top: 8px; right: 0; width: 5px; height: 5px; border-top: 1px solid #000; border-right: 1px solid #000; transform: rotate(45deg);}
+
+.subCont_Container .title_Box{display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 40px;}
+.titleLeft_Box .normalSentence{padding-top: 10px; color: var(--darkgray);}
+.titleRight_Box{padding: 20px 40px; border: 1px solid var(--deeppink);}
+.titleRight_Box p{color: var(--deeppink);}
+.subCont_Container .content_Box{padding: 40px 300px;}
+.content_Box:before{content: ''; position: absolute; top: 0; left: 300px; width: 1303px; height: 1px; background-color: var(--darkgray);}
+.content_Box:after{content: ''; position: absolute; bottom: 0; left: 300px; width: 1303px; height: 1px; background-color: var(--darkgray);}
+.ImgBox{margin-bottom: 20px; height: 400px; overflow: hidden;}
+.ImgBox img{position: relative; top: -10px; width: 100%;}
+.ImgBox .thirdlistBanner{top: -110px;}
+.ImgBox .fourthlistBanner{top: -110px;}
+.ImgBox .fivthlistBanner{top: -225px;}
+.branchTabCont{display: flex; flex-wrap: wrap;}
+.branchTabCont li{width: calc(20% - 16px); margin-right: 20px; margin-bottom: 20px;}
+.branchTabCont li:nth-child(5n){margin-right: 0;}
+.branchTabCont li:nth-child(21), .branchTabCont li:nth-child(22), .branchTabCont li:nth-child(23), .branchTabCont li:nth-child(24) {margin-bottom: 0;}
+.branchBtn{position: relative; padding: 16px; width: 100%; background-color: #fff; border: 1px solid var(--darkgray);}
+.branchBtn:before{content: ''; position: absolute; top: calc(50% - 5px); right: 20px; width: 10px; height: 10px; border-top: 2px solid #000; border-right: 2px solid #000; transform: rotate(45deg);}
+.disableBranch{background: var(--lightgray); border: 1px solid var(--lightgray); color: #fff; pointer-events: none;}
+.disableBranch:before{border-top: 2px solid #fff; border-right: 2px solid #fff;}
+.subCont_Container .bottom_Box{display: flex; justify-content: space-between; align-items: center; padding-top: 20px;}
+.goeventListBtn{padding: 10px 20px; background-color: var(--deeppink); color: #fff;}
