@@ -89,6 +89,16 @@ main{position: relative; z-index: 0; padding: 0 0 150px; width: 100%; min-width:
 .subCont_Container:last-child{padding-bottom: 0;}
 .subListCont{display: none;}
 .subListCont.currentListCont{display: block;}
+.bchsubTabList_1{left: -300px;}
+.bchsubTabList_2{left: -626px;}
+.bchsubTabList_3{left: -952px;}
+.bchsubTabList_4{left: -1277px;}
+.branchTabList li{width: 25%;}
+.bchsubTabList_1 li, .bchsubTabList_2 li{width: 10%;}
+.bchsubTabList_3 li{width: 100%;}
+.bchsubTabList_4 li{width: 33.3333%;}
+.subTitle_Box{display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;}
+.swiper-notification{display: none;}
 
 /* footer */
 footer{position: relative; z-index: 1;}

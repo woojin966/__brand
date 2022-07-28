@@ -1,18 +1,9 @@
 .branch_Container1{z-index: 1;}
 
-.bchsubTabList_1{left: -300px;}
-.bchsubTabList_2{left: -626px;}
-.bchsubTabList_3{left: -952px;}
-.bchsubTabList_4{left: -1277px;}
-.branchTabList li{width: 25%;}
-.bchsubTabList_1 li, .bchsubTabList_2 li{width: 10%;}
-.bchsubTabList_3 li{width: 100%;}
-.bchsubTabList_4 li{width: 33.3333%;}
-
 .subCont_Container.branch_Container2{padding-top: 145px;}
 .subCont_Container .branchListCont{padding: 0;}
 .branchListCont > div{padding: 0 300px;}
-.bCTitle_Box{display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;}
+
 .titleBtn_Box a{padding: 10px 0; width: 120px; background-color: var(--deeppink); color: #fff; text-align: center;}
 .bchHomeBtn{margin-right: 10px;}
 .bCProfile_Box{display: flex; height: 738px; overflow: hidden;}
