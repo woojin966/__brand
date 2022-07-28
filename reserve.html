@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/reserve.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
@@ -108,106 +108,141 @@
             <section class="hnavBg_Container"></section>
         </header>
         <main class="subMain">
-            <section class="eventMore_Container1 subCont_Container subCont_Banner">
+            <section class="reserve_Container1 subCont_Container subCont_Banner">
                 <div class="subBanner_Box">
-                    <p class="subPageTit">이벤트</p>
-                    <p class="bigSentence">미앤미 대표 이벤트</p>
+                    <p class="subPageTit">예약하기</p>
+                    <p class="bigSentence">완벽한 당신을 만드는 미앤미</p>
+                </div>
+                <div class="subTab_Box">
+                    <ul class="subTabList branchTabList">
+                        <li>
+                            <a href="javascript:void(0)" data-tab="branchTab1" class="subTabBtn branchTabBtn currentTabBtn">
+                                <span class="normalSentence">서울</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-tab="branchTab2" class="subTabBtn drTabBtn">
+                                <span class="normalSentence">경기·인천</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-tab="branchTab3" class="subTabBtn drTabBtn">
+                                <span class="normalSentence">대전·충청</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-tab="branchTab4" class="subTabBtn drTabBtn">
+                                <span class="normalSentence">부산·울산·경상</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <section class="eventMore_Container2 subCont_Container">
-                <div class="title_Box">
-                    <div class="titleLeft_Box">
-                        <p class="subPageInnerTit">피코 문신제거</p>
-                        <p class="normalSentence">2022. 06. 01 ~ 06. 30</p>
+            <section class="reserve_Container2 subCont_Container">
+                <div id="branchTab1" class="branchListCont C00004Cont subListCont currentListCont">
+                    <div class="subTitle_Box">
+                        <p class="subPageInnerTit">서울지점</p>
                     </div>
-                    <div class="titleRight_Box">
-                        <p class="midSentence">진행중</p>
-                    </div>
-                </div>
-                <div class="content_Box">
-                    <div class="ImgBox">
-                        <img src="img/event/event3pc.jpg" alt="eventBanner" class="fivthlistBanner">
-                    </div>
-                    <div class="partyinBranch_Box">
-                        <ul class="branchTabCont">
+                    <div class="branchList_Box">
+                        <ul class="reseveBranchList">
                             <li>
-                                <a href="http://gn.branch.mimimi.co.kr/eventNew/event.php" target="_blank" data-val="C00004" class="branchBtn normalSentence_bold">강남본점</a>
+                                <div class="top_Box">
+                                    <p class="bigSentence_bold">강남본점</p>
+                                    <a href="http://gn.branch.mimimi.co.kr/" class="homeBtn normalSentence">지점으로 이동</a>
+                                    <a href="" class="reserveBtn normalSentence_bold">예약하기</a>
+                                </div>
+                                <div class="bottom_Box">
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">주소</P>
+                                        <p class="normalSentence info">서울시 서초구 강남대로 439(유화빌딩 9층 / 1층 데상트)</p>
+                                    </div>
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">전화</P>
+                                        <p class="normalSentence info">02-567-1102</p>
+                                    </div>
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">진료시간</P>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">월·화·목·금</span>오전 10:30 ~ 오후 08:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">수요일</span>오후 02:00 ~ 오후 09:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">토요일</span>오후 10:30 ~ 오후 04:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">평일 점심시간</span>오후 01:00 ~ 오후 02:00</p>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <a href="http://nw.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00006" class="branchBtn normalSentence_bold">노원점</a>
+                                <div class="top_Box">
+                                    <p class="bigSentence_bold">노원점</p>
+                                    <a href="http://nw.branch.mimimi.co.kr/" class="homeBtn normalSentence">지점으로 이동</a>
+                                    <a class="reserveBtn normalSentence_bold">예약하기</a>
+                                </div>
+                                <div class="bottom_Box">
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">주소</P>
+                                        <p class="normalSentence info">서울특별시 노원구 상계동 731-3 상아빌딩 6층</p>
+                                    </div>
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">전화</P>
+                                        <p class="normalSentence info">02-934-1111</p>
+                                    </div>
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">진료시간</P>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">월·화·목·금</span>오전 10:00 ~ 오후 08:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">수요일</span>오후 02:00 ~ 오후 09:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">토요일</span>오전 10:00 ~ 오후 03:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">평일 점심시간</span>오후 01:00 ~ 오후 02:00</p>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <a href="http://si.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00007" class="branchBtn normalSentence_bold">신촌점</a>
+                                <div class="top_Box">
+                                    <p class="bigSentence_bold">신촌점</p>
+                                    <a href="http://si.branch.mimimi.co.kr/" class="homeBtn normalSentence">지점으로 이동</a>
+                                    <a class="reserveBtn normalSentence_bold">예약하기</a>
+                                </div>
+                                <div class="bottom_Box">
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">주소</P>
+                                        <p class="normalSentence info">서울특별시 마포구 신촌로 92 5층(노고산동, 카리스빌딩)</p>
+                                    </div>
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">전화</P>
+                                        <p class="normalSentence info">02-702-1138</p>
+                                    </div>
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">진료시간</P>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">월·화·목·금</span>오전 10:00 ~ 오후 08:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">수요일</span>오후 02:00 ~ 오후 09:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">토요일</span>오전 10:00 ~ 오후 03:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">평일 점심시간</span>오후 01:00 ~ 오후 02:00</p>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <a href="http://ch.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00008" class="branchBtn disableBranch normalSentence_bold">천호점</a>
-                            </li>
-                            <li>
-                                <a href="http://yd.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00009" class="branchBtn normalSentence_bold">영등포점</a>
-                            </li>
-                            <li>
-                                <a href="http://sy.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00010" class="branchBtn normalSentence_bold">수유점</a>
-                            </li>
-                            <li>
-                                <a href="http://md.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00011" class="branchBtn normalSentence_bold">명동점</a>
-                            </li>
-                            <li>
-                                <a href="http://ws.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00037" class="branchBtn normalSentence_bold">왕십리점</a>
-                            </li>
-                            <li>
-                                <a href="http://bs.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00038" class="branchBtn disableBranch normalSentence_bold">강서점</a>
-                            </li>
-                            <li>
-                                <a href="http://su.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00039" class="branchBtn normalSentence_bold">서울대입구점</a>
-                            </li>
-                            <li>
-                                <a href="http://sw.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00013" class="branchBtn disableBranch normalSentence_bold">수원점</a>
-                            </li>
-                            <li>
-                                <a href="http://is.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00014" class="branchBtn disableBranch normalSentence_bold">일산점</a>
-                            </li>
-                            <li>
-                                <a href="http://bp.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00016" class="branchBtn normalSentence_bold">부평점</a>
-                            </li>
-                            <li>
-                                <a href="http://pc.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00015" class="branchBtn disableBranch normalSentence_bold">평촌점</a>
-                            </li>
-                            <li>
-                                <a href="http://bc.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00017" class="branchBtn normalSentence_bold">부천점</a>
-                            </li>
-                            <li>
-                                <a href="http://as.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00018" class="branchBtn disableBranch normalSentence_bold">안산점</a>
-                            </li>
-                            <li>
-                                <a href="http://bd.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00019" class="branchBtn normalSentence_bold">분당점</a>
-                            </li>
-                            <li>
-                                <a href="http://gw.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00020" class="branchBtn normalSentence_bold">구월점</a>
-                            </li>
-                            <li>
-                                <a href="http://gm.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00022" class="branchBtn normalSentence_bold">광명점</a>
-                            </li>
-                            <li>
-                                <a href="http://pt.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00034" class="branchBtn normalSentence_bold">평택점</a>
-                            </li>
-                            <li>
-                                <a href="http://ca.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00029" class="branchBtn normalSentence_bold">천안점</a>
-                            </li>
-                            <li>
-                                <a href="http://sm.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00024" class="branchBtn normalSentence_bold">부산서면점</a>
-                            </li>
-                            <li>
-                                <a href="http://us.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00027" class="branchBtn disableBranch normalSentence_bold">울산점</a>
-                            </li>
-                            <li>
-                                <a href="http://hw.branch.mimimi.co.kr/event/event.php" target="_blank" data-val="C00032" class="branchBtn normalSentence_bold">부산센텀시티점</a>
+                                <div class="top_Box">
+                                    <p class="bigSentence_bold">점</p>
+                                    <a href="http://si.branch.mimimi.co.kr/" class="homeBtn normalSentence">지점으로 이동</a>
+                                    <a class="reserveBtn normalSentence_bold">예약하기</a>
+                                </div>
+                                <div class="bottom_Box">
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">주소</P>
+                                        <p class="normalSentence info">서울특별시 마포구 신촌로 92 5층(노고산동, 카리스빌딩)</p>
+                                    </div>
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">전화</P>
+                                        <p class="normalSentence info">02-702-1138</p>
+                                    </div>
+                                    <div>
+                                        <P class="normalSentence_bold infoTitle">진료시간</P>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">월·화·목·금</span>오전 10:00 ~ 오후 08:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">수요일</span>오후 02:00 ~ 오후 09:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">토요일</span>오전 10:00 ~ 오후 03:00</p>
+                                        <p class="normalSentence branchinfoTime"><span class="normalSentence_bold">평일 점심시간</span>오후 01:00 ~ 오후 02:00</p>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="bottom_Box">
-                    <p class="normalSentence">※ 이벤트는 지점별 상이할 수 있으며, 자세한 내용은 지점 홈페이지에서 확인 부탁드립니다.</p>
-                    <a href="event.html" class="normalSentence_bold goeventListBtn">목록으로</a>
                 </div>
             </section>
         </main>
@@ -428,5 +463,6 @@
             </div>
         </section>
     </footer>
+
 </body>
 </html>
