@@ -1,0 +1,15 @@
+.reseveBranchList{display: flex; flex-wrap: wrap;}
+.reseveBranchList li{padding: 40px; margin-right: 20px; margin-top: 20px; width: calc(50% - 10px); border: 1px solid var(--darkgray);}
+.reseveBranchList li:nth-child(even){margin-right: 0;}
+.reseveBranchList li:first-child, .reseveBranchList li:nth-child(2){margin-top: 0;}
+.top_Box{display: flex; align-items: flex-end; padding-bottom: 20px; border-bottom: 1px solid var(--darkkbeige);}
+.cardTitle{margin-right: 10px;}
+.homeBtn{position: relative;}
+.homeBtn::before{content: ''; position: absolute; top: 7px; right: -10px; width: 8px; height: 8px; border-top: 1px solid #000; border-right: 1px solid #000; transform: rotate(45deg);}
+.reserveBtn{position: absolute; right: 0; padding: 10px 20px; background-color: var(--deeppink); color: #fff;}
+.bottom_Box{padding-top: 20px;}
+.bottom_Box > div{display: flex; flex-wrap: wrap;}
+.infoTitle{width: 15%;}
+.info{width: 75%;}
+.info_left20{padding-left: 15%;}
+.info span{margin-right: 10px;}
