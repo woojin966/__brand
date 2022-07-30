@@ -1,0 +1,11 @@
+.subCont_Container.clicnic_Container2{padding-top: 0;}
+.clicnic_Container2 > div{padding: 0;}
+.clicnic_Container2 > div img{width: 100%; height: auto;}
+.clicnic_Container2 > .gifBox1 span{position: absolute; bottom: 104px; left: 425px; display: block;}
+.clicnic_Container2 > .gifBox2 span{position: absolute; top: 280px; left: 365px; display: block;}
+.clicnic_Container2 > .gifBox2 span img{display: inline-block; width: 280px;}
+.clinicTabList li{width: calc(100% / 8);}
+.clinicTabBtn{padding: 10px 15px; width: 100%; text-align: center; color: #fff;} 
+.clinicTabBtn.currentTabBtn{font-weight: bold; color: var(--lightbeige);}
+.clinicTabBtn span{position: relative; display: inline-block;}
+.clinicTabBtn.currentTabBtn span:before{content: ''; position: absolute; left: 0; bottom: -10px; width: 100%; height: 3px; background-color: var(--lightbeige);
