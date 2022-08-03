@@ -24,3 +24,8 @@ main{padding: 0;}
 .fInfo_Container p{color: #fff;}
 .fiLawBtn{color: #fff;}
 .fiLawBtn:before{background-color: #fff; opacity: .6;}
+
+/* mibile */
+@media (min-width: 360px) and (max-width: 1199px) {
+    .homeMain_Container2{padding: 0 17px 20px;}
+}
