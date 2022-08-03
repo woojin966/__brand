@@ -41,6 +41,61 @@ $(document).ready(function(){
         $('.hnavBg_Container').removeClass('bgOn');
         $('main').css('z-index', '0');
     });
+
+    //mobile nav
+    // $(window).resize(function(){     
+    //     var D_WIDTH = $(window).width();
+    //     console.log(D_WIDTH);
+        
+    // });
+    var D_WIDTH = $(window).width();
+    function headerWidth(){
+        $('.ham_Container').css({'width': D_WIDTH + 'px', 'min-width': D_WIDTH + 'px'});
+    }
+    headerWidth();
+    $(window).resize(function(){
+        headerWidth();
+    });
+    if (D_WIDTH >= 360 && D_WIDTH <= 1159){
+        console.log('aaaaaa');
+        
+        $('.menu1Dp').attr({ href: "javascript:void(0)", class: "M_menu1Dp"});
+        $('.Menu2DpList').attr('class', 'M_Menu2DpList');
+        $('.M_menu1Dp').on('click',function(){
+            var M_ACT_MENU = $(this);
+            var M_SUB_LIST = M_ACT_MENU.next('.M_Menu2DpList');
+            if(M_ACT_MENU.hasClass('actMenu')){
+                M_ACT_MENU.removeClass('actMenu');
+                M_SUB_LIST.removeClass('subUlBlock');
+            }else{
+                $('.actMenu').removeClass('actMenu');
+                $('.subUlBlock').removeClass('subUlBlock');
+                M_ACT_MENU.addClass('actMenu');
+                M_SUB_LIST.addClass('subUlBlock');
+            }
+        });
+        $('.hamBtn').on('click', function(){
+            var HAM_BTN = $(this);
+            var NAV_SECTION = $('.hnav_Container');
+            var SKIP_SECTION = $('.hskipnav_Container');
+            var BG_SECTION = $('.hnavBg_Container');
+            if(HAM_BTN.hasClass('actHam')){
+                HAM_BTN.removeClass('actHam');
+                NAV_SECTION.removeClass('hSecBlock');
+                SKIP_SECTION.removeClass('hSecBlock');
+                BG_SECTION.removeClass('hSecBlock');
+                $('main').css('display','flex');
+                $('footer').css('display','flex');
+            }else{
+                HAM_BTN.addClass('actHam');
+                NAV_SECTION.addClass('hSecBlock');
+                SKIP_SECTION.addClass('hSecBlock');
+                BG_SECTION.addClass('hSecBlock');
+                $('main').css('display','none');
+                $('footer').css('display','none');
+            }
+        });
+    }
     
     //quick contact btn
     $('.fqContactBtn').on('click', function(){
