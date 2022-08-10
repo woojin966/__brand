@@ -20,6 +20,7 @@
 .inroHashtag_box{margin-top: 40px;}
 .inroHashtag_box p{display: inline-block; margin-right: 10px; padding: 10px 15px; border: 1px solid var(--deeppink); border-radius: 40px; color: var(--deeppink);}
 .inroHashtag_box p:last-child{margin-right: 0;}
+.mBr_block{display: none;}
 
 .subCont_Container.minmi_Container2{padding: 0 300px;}
 .subCont_Container .mC2Top_Box{padding: 0 0 40px; display: flex;}
@@ -31,20 +32,59 @@
 .top_LeftBox .subPageInnerTit b{font-family: 'Yeseva One', cursive; font-size: 60px; color: var(--deeppink);}
 .historyList{padding: 80px 0; display: flex; flex-direction: column; justify-content: space-between; height: calc(100% - 90px);}
 .historyList li{position: relative; padding-top: 30px;}
+.historyList li:first-child{margin-bottom: 0;}
 .historyList li:before{content: ''; position: absolute; top: 0; left: calc(50% - 10px); width: 20px; height: 20px; box-sizing: border-box; border: 5px solid var(--deeppink); border-radius: 20px;}
 .historyList li p:first-child{margin-bottom: 10px; color: var(--deeppink);}
-.top_RightBox{margin-left: 20px;}
+.top_RightBox{margin-left: 20px; margin-top: 0;}
 .top_RightBox img{margin: 0 auto;}
 .subCont_Container .mC2Bottom_Box{padding: 40px; border: 1px solid var(--darkgray); border-radius: 20px;}
 .bottom_TopBox{display: flex; justify-content: space-between; padding-bottom: 20px;}
-.branchList li{display: flex; padding-bottom: 10px;}
+.branchList li{display: flex; padding-bottom: 10px; text-align: left;}
 .branchList li:nth-child(3), .branchList li:nth-child(4){display: inline-block;}
 .branchList li:nth-child(4){padding-left: 56px;}
 .branchList li p{display: inline-block;}
-.branchList li p:first-child{position: relative; width: 210px; padding-right: 20px; color: var(--deeppink);}
+.branchList li p:first-child{position: relative; width: 210px; padding-right: 20px; padding-bottom: 0; color: var(--deeppink);}
 .branchList li:nth-child(4) p:first-child{width: 260px;}
 .branchList li p:first-child:before{content: ''; position: absolute; top: 5px; right: 0; width: 2px; height: 20px; background-color: var(--deeppink);}
 .branchList li p:last-child{padding-left: 20px;}
 .branchJoinBtn{padding: 40px; background-color: var(--deeppink); color: #fff;}
 .bottom_BottomBox{padding-top: 20px; border-top: 1px solid var(--lightgray); text-align: center;}
 .bottom_BottomBox p{color: var(--deeppink);}
+
+@media (min-width: 360px) and (max-width: 1199px) {
+    .subCont_Container .mC1Banner_Box{top: 52px; left: 0; height: calc(100vh - 52px);}
+    .mC1BannerList{flex-wrap: wrap;}
+    .mC1BannerList li{width: 50%; height: 50%;}
+    .mC1BannerList li:nth-child(1) img{bottom: -34%; width: 158%; left: -35%;}
+    .mC1BannerList li:nth-child(2) img{width: 188%; left: -48%; bottom: -26%;}
+    .mC1BannerList li:nth-child(3) img{width: 193%; left: -45%; bottom: -35%;}
+    .mC1BannerList li:nth-child(4) img{bottom: 0; width: 180%; left: -34%;}
+    .minmiIntroBTit{bottom: 10px; font-size: 32px;}
+
+    .subCont_Container:first-child.minmi_Container1{padding: 0 0 60px 0;}
+    .subCont_Container .mC1Inro_Box{padding: calc(100vh + 60px) 17px 0;}
+    .mC1Inro_Box .bigSentence_bold{margin-bottom: 10px;}
+    .inroHashtag_box{margin-top: 20px;}
+    .inroHashtag_box p{margin-right: 5px; margin-bottom: 10px; padding: 5px 10px;}
+    .mBr_block{display: block;}
+
+    .subCont_Container.minmi_Container2{padding: 0 17px;}
+    .subCont_Container .mC2Top_Box{flex-direction: column;}
+    .mC2Top_Box > div{width: 100%;}
+    .top_LeftBox .subPageInnerTit{font-size: 20px;}
+    .top_LeftBox .subPageInnerTit:before, .top_LeftBox .subPageInnerTit:after{top: 27px; width: 13%;}
+    .top_LeftBox .subPageInnerTit b{font-size: 32px;}
+    .historyList{padding: 40px 0;}
+    .historyList li{padding-top: 20px;}
+    .historyList li:first-child{margin-bottom: 40px;}
+    .historyList li:before{left: calc(50% - 8px); width: 16px; height: 16px; border: 3px solid var(--deeppink);}
+    .top_RightBox{margin-left: 0; margin-top: 20px;}
+    .top_RightBox img{width: 100%;}
+    .subCont_Container .mC2Top_Box{padding: 0 0 0 20px;}
+    .subCont_Container .mC2Bottom_Box{padding: 20px;}
+    .bottom_TopBox{flex-direction: column; padding-bottom: 10px;}
+    .branchList li{flex-direction: column; text-align: center;}
+    .branchList li:nth-child(3), .branchList li:nth-child(4){display: block;}
+    .branchList li:nth-child(4){padding-left: 0;}
+    .branchList li p:first-child{padding: 0; padding-bottom: 10px;}
+}
