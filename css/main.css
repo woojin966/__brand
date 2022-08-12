@@ -29,7 +29,8 @@ main{padding: 0;}
 @media (min-width: 360px) and (max-width: 1199px) {
     .homeMain_Container2{padding: 0 17px 10px;}
     .homeBranchTab_Box{width: 100%; overflow-x: scroll;}
-    .branchTabList{width: -webkit-max-content; height: 40px; white-space: nowrap;}
+    .branchTabList{width: 120%; height: 40px; white-space: nowrap; justify-content: stretch;}
+    .branchTabList li{width: 30%;}
     .branchTabCont li{width: calc(50% - 5px); margin-right: 10px; margin-bottom: 10px;}
     .branchTabCont li:nth-child(5n){margin-right: 10px;}
     .branchTabCont li:nth-child(6), .branchTabCont li:nth-child(7), .branchTabCont li:nth-child(8), .branchTabCont li:nth-child(9), .branchTabCont li:nth-child(10){margin-bottom: 10px;}

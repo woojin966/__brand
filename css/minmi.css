@@ -45,9 +45,9 @@
 .branchList li p{display: inline-block;}
 .branchList li p:first-child{position: relative; width: 210px; padding-right: 20px; padding-bottom: 0; color: var(--deeppink);}
 .branchList li:nth-child(4) p:first-child{width: 260px;}
-.branchList li p:first-child:before{content: ''; position: absolute; top: 5px; right: 0; width: 2px; height: 20px; background-color: var(--deeppink);}
+.branchList li p:first-child:before{content: ''; position: absolute; top: 5px; right: 0; display: block; width: 2px; height: 20px; background-color: var(--deeppink);}
 .branchList li p:last-child{padding-left: 20px;}
-.branchJoinBtn{padding: 40px; background-color: var(--deeppink); color: #fff;}
+.branchJoinBtn{padding: 40px; background-color: var(--deeppink); color: #fff; text-align: center;}
 .bottom_BottomBox{padding-top: 20px; border-top: 1px solid var(--lightgray); text-align: center;}
 .bottom_BottomBox p{color: var(--deeppink);}
 
@@ -80,11 +80,16 @@
     .historyList li:before{left: calc(50% - 8px); width: 16px; height: 16px; border: 3px solid var(--deeppink);}
     .top_RightBox{margin-left: 0; margin-top: 20px;}
     .top_RightBox img{width: 100%;}
-    .subCont_Container .mC2Top_Box{padding: 0 0 0 20px;}
+    .subCont_Container .mC2Top_Box{padding: 0 0 20px 0;}
     .subCont_Container .mC2Bottom_Box{padding: 20px;}
-    .bottom_TopBox{flex-direction: column; padding-bottom: 10px;}
-    .branchList li{flex-direction: column; text-align: center;}
+    .bottom_TopBox{flex-direction: column; padding-bottom: 20px;}
+    .branchList li{flex-direction: column; padding-bottom: 16px; text-align: center;}
     .branchList li:nth-child(3), .branchList li:nth-child(4){display: block;}
     .branchList li:nth-child(4){padding-left: 0;}
-    .branchList li p:first-child{padding: 0; padding-bottom: 10px;}
+    .branchList li p:first-child{padding: 0; padding-bottom: 5px; width: 100%;}
+    .branchList li p:first-child:before{display: none;}
+    .branchList li:nth-child(4) p:first-child{width: 100%;}
+    .branchList li p:last-child{padding-left: 0;}
+    .branchJoinBtn{padding: 10px; width: 100%;}
+    .bottom_BottomBox p{font-size: 16px;}
 }

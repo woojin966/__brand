@@ -97,6 +97,50 @@ $(document).ready(function () {
         $("footer").css("display", "none");
       }
     });
+    var M_fKAKAO_SWIPER = new Swiper(".Mfkakao_Box", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      spaceBetween: 18,
+    });
+    $('.mfqContactBtn').on('click', function(){   
+      var M_Q_CONTACTBTN = $(this);
+      var M_Q_BTN_BOX = M_Q_CONTACTBTN.closest('.MfqContactBtn_Box');
+      var M_Q_CONTACT_BOX = M_Q_BTN_BOX.next('.fqContact_Box');
+      var M_Q_CONTACT_FORM = M_Q_CONTACT_BOX.children('.fqform_Box');
+
+      $('.Mqbtn_active').removeClass('Mqbtn_active');
+      $('.fqcontentblock').removeClass('fqcontentblock');
+      M_Q_CONTACTBTN.addClass('Mqbtn_active');
+      M_Q_BTN_BOX.addClass('MqBtnBox_none');
+      M_Q_CONTACT_BOX.addClass('MqContactBox_block');
+      M_Q_CONTACT_FORM.addClass('fqcontentblock');
+    });
+    $('.fqkakaoBtn').on('click', function(){
+      var M_Q_KAKAOBTN = $(this);
+      var _M_Q_BTN_BOX = M_Q_KAKAOBTN.closest('.MfqContactBtn_Box');
+      var _M_Q_CONTACT_BOX = _M_Q_BTN_BOX.next('.fqContact_Box');
+      var _M_Q_KAKAO_LIST = _M_Q_CONTACT_BOX.children('.Mfkakao_Box');
+
+      $('.Mqbtn_active').removeClass('Mqbtn_active');
+      $('.fqcontentblock').removeClass('fqcontentblock');
+      M_Q_KAKAOBTN.addClass('Mqbtn_active');
+      _M_Q_BTN_BOX.addClass('MqBtnBox_none');
+      _M_Q_CONTACT_BOX.addClass('MqContactBox_block');
+      _M_Q_KAKAO_LIST.addClass('fqcontentblock');
+    });
+    $('.fqCloseBtn').on('click', function(){
+      var M_Q_CLOSEBTN = $(this);
+      var __M_Q_CONTACT_CONTENT = M_Q_CLOSEBTN.closest('.fqContact_contBox');
+      var __M_Q_CONTACT_BOX = __M_Q_CONTACT_CONTENT.closest('.fqContact_Box');
+      var __M_Q_BTN_BOX = __M_Q_CONTACT_BOX.prev('.MfqContactBtn_Box');
+      
+      $('.Mqbtn_active').removeClass('Mqbtn_active');
+      $('.fqcontentblock').removeClass('fqcontentblock');
+      $('.MqContactBox_block').removeClass('MqContactBox_block');
+      __M_Q_BTN_BOX.removeClass('MqBtnBox_none');
+    });
   }
 
   //quick contact btn

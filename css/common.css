@@ -104,31 +104,33 @@ main{position: relative; z-index: 0; padding: 0 0 150px; width: 100%; min-width:
 .swiper-notification{display: none;}
 
 /* footer */
+footer{padding-bottom: 0; background-color: #fff;}
 footer{position: relative; z-index: 1;}
 footer > section{padding: 0 300px; width: 100%; min-width: 1320px;}
 .fQuickcontact_Container{position: relative; background-color: var(--lightbeige);}
-.fqContactBtn_Box{position: absolute; right: 300px; top: -50px; z-index: -1; width: 100px; height: 100px; background-color: #E2DFD4; border-radius: 50%; text-align: center;}
-.fqContactBtn_Box:before{content: ''; position: absolute; right: 0; bottom: 50px; width: 1300px; height: 1px; background-color: var(--lightbeige);}
+.fqContactBtn_Box{position: absolute; right: 300px; top: -50px; z-index: -1; display: block; width: 100px; height: 100px; background-color: #E2DFD4; border-radius: 50%; text-align: center;}
+.MfqContactBtn_Box{display: none;}
+/* .fQuickcontact_Container:before{content: ''; position: absolute; right: 0; bottom: 50px; width: 1300px; height: 1px; background-color: var(--lightbeige);} */
+.fQuickHorizonbar{position: absolute; right: 300px; bottom: 0; display: block; width: 1300px; height: 1px; background-color: var(--lightbeige);}
 .fqContactBtn_Box.move_Box{top: -25px; width: 50px; height: 50px;}
 .fqContactBtn_Box.move_Box:before{width: 0; height: 0;}
 .fqContactBtn{padding: 25px 0; width: 100%; height: 100%;}
-.fqContactBtn:before{content: ''; position: absolute; top: 10px; left: calc(50% - 4px); width: 8px; height: 8px; border-top: 2px solid #000; border-right: 2px solid #000; transform: rotate(-45deg); transition: .4s;}
+.fqContactBtn:before{content: ''; position: absolute; top: 10px; left: calc(50% - 4px); display: block; width: 8px; height: 8px; border-top: 2px solid #000; border-right: 2px solid #000; transform: rotate(-45deg); transition: .4s;}
 .fqContactBtn.on:before{transform: rotate(135deg); transition: .4s;}
 .fqContact_Box{display: none; padding: 40px 0; justify-content: space-between; flex-wrap: wrap;}
-.fqContact_Box.qContact_blk{ display: flex;}
-.fqContact_Box > div{display: inline-block; margin-right: 20px;}
-.fqContact_Box > .fqform_Box{width: calc(80% - 10px);}
-.fqform_Box > form{display: flex; flex-wrap: wrap;}
-.qcForm_Box{display: inline-block; margin-right: 10px; margin-bottom: 10px; width: calc(50% - 5px);}
+.fqContact_Box.qContact_blk{ display: block;}
+.fqContact_Box > .Mfkakao_Box{display: none;}
+.fqform_Box > form{display: inline-block; width: 89%; vertical-align: top;}
+.qcForm_Box{display: inline-block; margin-right: 10px; margin-bottom: 10px; width: calc(50% - 10px);}
 .qcForm_Box:nth-child(2n){margin-right: 0;}
 .qcForm_Box label{display: inline-block; width: 90px;}
 .qcForm_Box input{display: inline-block; padding: 10px; width: calc(100% - 120px);}
 .qcForm_Box select{display: inline-block; padding: 10px; width: calc(100% - 98px);}
-.fqContact_Box > .fqSubmit_Box{width: 150px; margin-right: 0;}
-.fqSubmitBtn{padding: 38px 0; width: 100%; text-align: center; background-color: var(--brickbeige); color: #fff;}
-.fqContact_Box > .fqChk_Box{display: block; width: 100%;}
+.fqSubmit_Box{display: inline-block; width: 10%;}
+.fqSubmitBtn{padding: 36px 0; width: 100%; text-align: center; background-color: var(--brickbeige); color: #fff;}
+.fqChk_Box{display: block; margin-top: 0; width: 100%;}
 .fqChk_Box > div{display: inline-block;}
-.chkLeft_Box{margin-right: 10px;}
+.chkLeft_Box{margin-right: 10px; margin-bottom: 0;}
 .chkLeft_Box input, .chkRight_Box input[type="checkbox"]{display: none;}
 .chkLeft_Box input[type="checkbox"] + label, .chkRight_Box input[type="checkbox"] + label{position: relative; display: inline-block; vertical-align: middle; width: 20px; height: 20px; background-color: var(--brickbeige); cursor: pointer;}
 .chkLeft_Box input[type="checkbox"] + label:after, .chkRight_Box input[type="checkbox"] + label:after{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(https://github.com/woojin966/__brand/blob/main/img/icon/icon_chk.png?raw=true) no-repeat top 10%  left 10%; background-size: 80%;}
@@ -211,13 +213,14 @@ footer > section{padding: 0 300px; width: 100%; min-width: 1320px;}
     .hnavBg_Container{top: 0; left: 0; display: none; width: 100%; height: 100vh; z-index: 1;}
     .hnavBg_Container.hSecBlock{display: block;}
 
-    main{position: relative; z-index: 0; padding: 0 0 50px; width: 100%; min-width: 100%;}
+    main{position: relative; z-index: 0; padding: 0 0 60px; width: 100%; min-width: 100%;}
     .subCont_Container{padding: 60px 0;}
     .subCont_Container:nth-child(2){padding-top: 60px;}
     .subCont_Container > div{padding: 0 17px;}
 
+    footer{padding-bottom: 65px; background-color: var(--lightbeige);} 
     footer > section{padding: 0 17px; width: 100%; min-width: 100%;}
-    .fInfo_Container{flex-direction: column; padding-top: 20px; padding-bottom: 20px;}
+    .fInfo_Container{flex-direction: column; padding-top: 20px; padding-bottom: 20px; background-color: var(--lightbeige);}
     .fInfo_Container > div{margin-right: 0; width: 100%;}
     .fInfo_Container > .fiRmembership_Box{width: 100%; height: 50px;}
     .Rmemberhip_Btn{height: 50px; background: url(https://github.com/woojin966/_sibal_brand/blob/main/img/ftlogo.png?raw=true) no-repeat 26% 71%;}
@@ -226,4 +229,40 @@ footer > section{padding: 0 300px; width: 100%; min-width: 1320px;}
     .fBranchinfo br{display: block;}
     .fInfo_Container > .fiLawCopy_Box{height: auto; text-align: center;}
     /* .fBranchinfo br.wBr_block{display: block;} */
+    .fQuickcontact_Container{padding: 0; background-color: transparent;}
+    .fQuickHorizonbar{display: none;}
+    .fqContactBtn_Box {display: none;}
+    .fqContactBtn:before{display: none;}
+    .MfqContactBtn_Box{position: fixed; bottom: -1px; left: 0; z-index: 2; display: flex; padding: 10px 17px; width: 100%; align-items: center; background-color: rgba(255,255,255,.8); border-radius: 15px 15px 0 0; border: 1px solid #fff;}
+    .MqBtnBox_none{display: none;}
+    .MfqContactBtn_Box a{width: calc(50% - 5px); padding: 10px; text-align: center; background: #fff; border: 1px solid var(--deeppink); border-radius: 42px; box-shadow: 0 0 5px rgb(0 0 0 / 15%);}
+    .fqkakaoBtn{display: inline-block; margin: 0 5px 0 0;}
+    .mfqContactBtn{display: inline-block; margin: 0 0 0 5px;}
+    .fqCloseBtn{display: block; position: absolute; top: -40px; left: calc(50% - 40px); width: 80px; height: 20px; border-radius: 10px 10px 0 0; background-color: rgba(255,255,255,.95);}
+    .fqCloseBtn:before{content: ''; position: absolute; top: 8px; left: calc(50% - 4px); width: 8px; height: 8px; border-top: 1px solid #000; border-right: 1px solid #000; transform: rotate(135deg);}
+
+    .MqContactBox_block{display: block; position: fixed; bottom: -1px; padding: 20px 17px; background-color: rgba(255,255,255,.95);width: 100%; z-index: 2;}
+    .fqContact_Box > div{display: none;}
+    .fqContact_Box > .fqcontentblock{display: block;}
+    /* .fqContact_Box > .fqform_block{display: block;} */
+    .fqTitle_Box{margin-bottom: 10px;}
+    .fqform_Box > form{display: block; width: 100%;}
+    .qcForm_Box{display: flex; align-items: center; margin-right: 0; width: 100%;}
+    .qcForm_Box label{width: 20%;}
+    .qcForm_Box select, .qcForm_Box input{width: 80%;}
+    .fqSubmit_Box{display: block; width: 100%;}
+    .fqSubmitBtn{padding: 10px 0;}
+    .fqChk_Box{margin-top: 10px;}
+    .chkLeft_Box{margin-right: 0; margin-bottom: 5px;}
+    .chkLeft_Box input[type="checkbox"] + label, .chkRight_Box input[type="checkbox"] + label{width: 15px; height: 15px;}
+    .chkName{letter-spacing: -1.5px;}
+    .Mfkakao_Box .swiper-slide{display: flex; flex-wrap: wrap;}
+    .branchKakaoList_title{margin-bottom: 10px; width: 100%; text-align: center;}
+    .branchMfBtn{width: calc(25% - 8px); margin-right: 10px; margin-bottom: 10px; padding: 10px 0; background-color: #fff; border: 1px solid var(--brickbeige); box-shadow: 0 0 3px rgba(0,0,0,.15); border-radius: 10px; text-align: center;}
+    .branchMfBtn:nth-child(5), .branchMfBtn:nth-child(9), .branchMfBtn:last-child{margin-right: 0;}
+    .branchMfBtn img{display: inline; width: 30px; height: 30px; margin-bottom: 5px;}
+    .branchMfBtn span{display: block; letter-spacing: -2px;}
+    .swiper-button-next, .swiper-button-prev{top: 28px; width: 12px; height: 12px;}
+    .swiper-button-next:after{content: ''; width: 100%; height: 100%; border-top: 1px solid #000; border-right: 1px solid #000; transform: rotate(45deg);}
+    .swiper-button-prev:after{content: ''; width: 100%; height: 100%; border-top: 1px solid #000; border-left: 1px solid #000; transform: rotate(-45deg);}
 }
