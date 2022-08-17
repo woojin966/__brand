@@ -39,5 +39,6 @@ main{padding: 0;}
     .branchBtn{padding: 10px;}
     .branchBtn:before {right: 10px; width: 8px; height: 8px;}
     
+    footer{padding-bottom: 0; background-color: var(--lightbeige);} 
     .fInfo_Container:before{left: 17px; width: calc(100% - 34px);}
 }
