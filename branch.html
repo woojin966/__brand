@@ -16,6 +16,20 @@
 <body>
     <article class="main_Wrap">
         <header>
+            <section class="ham_Container">
+                <div class="MhLogo_Box">
+                    <a href="index.html" class="MhLogo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="Mham_Box">
+                    <a href="javascript:void(0)" class="hamBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </section>
             <section class="hskipnav_Container">
                 <ul class="skipnabList">
                     <li>
@@ -37,6 +51,10 @@
                 </div>
                 <nav class="hMenu_Navigator">
                     <ul class="Menu1DpList">
+                        <li class="MjoinBranchLi">
+                            <a href="http://www.minmiacademy.co.kr/sub/contact.php" target="_blank" class="joinBranch normalSentence_bold">가맹문의</a>
+                            <span class="smallSentence">미앤미에서 가맹점을 모집합니다.</span>
+                        </li>
                         <li>
                             <a href="minimi.html" class="menu1Dp normalSentence_bold">MINMI</a>
                             <ul class="Menu2DpList">
@@ -99,7 +117,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="WjoinBranchLi">
                             <a href="http://www.minmiacademy.co.kr/sub/contact.php" target="_blank" class="joinBranch normalSentence_bold">가맹문의</a>
                         </li>
                     </ul>
@@ -119,149 +137,157 @@
                             <a href="javascript:void(0)" data-tab="branchTab1" data-stab="branchTab1_1" class="subTabBtn branchTabBtn currentTabBtn">
                                 <span class="normalSentence">서울</span>
                             </a>
-                            <ul id="branchTab1" class="stabSubList stabSubList bchsubTabList bchsubTabList_1 currebtTabList">
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_1" class="stabSubBtn stabSubBtn_first bchsubTabBtn currentsTabBtn">
-                                        <span class="normalSentence">강남본점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_2" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">노원점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_3" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">신촌점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_4" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">천호점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_5" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">영등포점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_6" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">수유점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_7" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">명동점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_8" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">왕십리점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_9" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">강서점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab1_10" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">서울대입구점</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div id="branchTab1" class="stabSubList currebtTabList">
+                                <ul class="bchsubTabList bchsubTabList_1">
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_1" class="stabSubBtn stabSubBtn_first bchsubTabBtn currentsTabBtn">
+                                            <span class="normalSentence">강남본점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_2" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">노원점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_3" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">신촌점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_4" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">천호점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_5" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">영등포점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_6" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">수유점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_7" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">명동점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_8" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">왕십리점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_9" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">강서점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab1_10" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">서울대입구점</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
                         </li>
                         <li>
                             <a href="javascript:void(0)" data-tab="branchTab2" data-stab="branchTab2_1" class="subTabBtn drTabBtn">
                                 <span class="normalSentence">경기·인천</span>
                             </a>
-                            <ul id="branchTab2" class="stabSubList bchsubTabList bchsubTabList_2">
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_1" class="stabSubBtn stabSubBtn_first bchsubTabBtn">
-                                        <span class="normalSentence">분당점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_2" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">수원점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_3" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">일산점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_4" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">부평점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_5" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">평촌점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_6" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">부천점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_7" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">안산점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_8" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">구월점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_9" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">광명점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab2_10" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">평택점</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div id="branchTab2" class="stabSubList">
+                                <ul class="bchsubTabList bchsubTabList_2">
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_1" class="stabSubBtn stabSubBtn_first bchsubTabBtn">
+                                            <span class="normalSentence">분당점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_2" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">수원점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_3" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">일산점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_4" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">부평점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_5" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">평촌점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_6" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">부천점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_7" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">안산점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_8" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">구월점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_9" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">광명점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab2_10" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">평택점</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="javascript:void(0)" data-tab="branchTab3" data-stab="branchTab3_1" class="subTabBtn drTabBtn">
                                 <span class="normalSentence">대전·충청</span>
                             </a>
-                            <ul id="branchTab3" class="stabSubList bchsubTabList bchsubTabList_3">
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab3_1" class="stabSubBtn stabSubBtn_first bchsubTabBtn">
-                                        <span class="normalSentence">천안점</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div id="branchTab3" class="stabSubList">
+                                <ul class="bchsubTabList bchsubTabList_3">
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab3_1" class="stabSubBtn stabSubBtn_first bchsubTabBtn">
+                                            <span class="normalSentence">천안점</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="javascript:void(0)" data-tab="branchTab4" data-stab="branchTab4_1" class="subTabBtn drTabBtn">
                                 <span class="normalSentence">부산·울산·경상</span>
                             </a>
-                            <ul id="branchTab4" class="stabSubList bchsubTabList bchsubTabList_4">
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab4_1" class="stabSubBtn stabSubBtn_first bchsubTabBtn">
-                                        <span class="normalSentence">부산서면점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab4_2" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">울산점</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-stab="branchTab4_3" class="stabSubBtn bchsubTabBtn">
-                                        <span class="normalSentence">부산센텀시티점</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div id="branchTab3" class="stabSubList">
+                                <ul id="branchTab4" class="bchsubTabList bchsubTabList_4">
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab4_1" class="stabSubBtn stabSubBtn_first bchsubTabBtn">
+                                            <span class="normalSentence">부산서면점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab4_2" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">울산점</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" data-stab="branchTab4_3" class="stabSubBtn bchsubTabBtn">
+                                            <span class="normalSentence">부산센텀시티점</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -344,13 +370,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
-                                <div style="height: 650px;">
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
                                     <a href="https://map.kakao.com/?urlX=505608.0&amp;urlY=1111689.0&amp;itemId=1255649303&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EA%B0%95%EB%82%A8%EB%B3%B8%EC%A0%90&amp;srcid=1255649303&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                         <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/e1055073595a52863c0a1d3b5071e1cb1aa9a82f579cf150425861a7a3ba181c" width="648px" height="648px" style="border:1px solid #ccc;">
                                     </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png?rqaw" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px">
                                     </a>
@@ -385,8 +411,8 @@
                                     <p class="normalSentence branchinfoParking">· 외부 건물 주차장(지점 문의)</p>
                                 </li>
                                 <li class="branchCallKakao">
-                                    <a href="javascript:void(0)" class="midSentence_bold branchCall">02-567-1102</a>
-                                    <a href="javascript:void(0)" class="midSentence_bold branchKakao">@미앤미의원 강남</a>
+                                    <a href="javascript:void(0)" class="bigSentence_bold branchCall">02-567-1102</a>
+                                    <a href="javascript:void(0)" class="bigSentence_bold branchKakao">@미앤미의원 강남</a>
                                 </li>
                             </ul>
                         </div>
@@ -439,13 +465,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
-                                <div style="height: 650px;">
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div  class="monlyMapmom1" style="height: 650px;">
                                     <a href="https://map.kakao.com/?urlX=513324.0&amp;urlY=1153871.0&amp;itemId=11494267&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%85%B8%EC%9B%90%EC%A0%90&amp;srcid=11494267&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                         <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/ad86ee1efea175f06da9652b431ee2389e420da0090661bf61d093f4f74a841a" width="648px" height="648px" style="border:1px solid #ccc;">
                                     </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div  class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px">
                                     </a>
@@ -526,13 +552,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
-                                <div style="height: 650px;">
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
                                     <a href="https://map.kakao.com/?urlX=485790.0&amp;urlY=1126572.0&amp;itemId=11512800&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%8B%A0%EC%B4%8C%EC%A0%90&amp;srcid=11512800&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                         <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/f660f161dfe8974c023c00aeefd40fcf21f3483f9dd3ef0d5591e44d1634c9e4" width="648px" height="648px" style="border:1px solid #ccc;">
                                     </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a>
                                         <div style="float: right; position: relative; top: 1px; font-size: 11px;">
@@ -612,7 +638,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=527256.0&amp;urlY=1122307.0&amp;itemId=9770512&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%B2%9C%ED%98%B8%EC%A0%90&amp;srcid=9770512&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/2f405c34f161b0a41935226417c0f611e736a982a8ab86b29d59c4887196e363" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=9770512&amp;confirmid=9770512&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%B2%9C%ED%98%B8%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%B2%9C%ED%98%B8%EC%A0%90&amp;eX=527256.0&amp;eY=1122307.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=9770512&amp;itemId=9770512&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%B2%9C%ED%98%B8%EC%A0%90&amp;urlX=527256.0&amp;urlY=1122307.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
+                                    <a href="https://map.kakao.com/?urlX=527256.0&amp;urlY=1122307.0&amp;itemId=9770512&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%B2%9C%ED%98%B8%EC%A0%90&amp;srcid=9770512&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/2f405c34f161b0a41935226417c0f611e736a982a8ab86b29d59c4887196e363" width="648px" height="648px" style="border:1px solid #ccc;">
+                                    </a>
+                                </div>
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=9770512&amp;confirmid=9770512&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%B2%9C%ED%98%B8%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%B2%9C%ED%98%B8%EC%A0%90&amp;eX=527256.0&amp;eY=1122307.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=9770512&amp;itemId=9770512&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%B2%9C%ED%98%B8%EC%A0%90&amp;urlX=527256.0&amp;urlY=1122307.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -681,7 +713,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=479231.0&amp;urlY=1115850.0&amp;itemId=12995308&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90&amp;srcid=12995308&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/97b038c6416c7aed5128311a73e9144c2aa62cf174c0b6706035f922389e57af" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=12995308&amp;confirmid=12995308&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90&amp;eX=479231.0&amp;eY=1115850.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=12995308&amp;itemId=12995308&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90&amp;urlX=479231.0&amp;urlY=1115850.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
+                                    <a href="https://map.kakao.com/?urlX=479231.0&amp;urlY=1115850.0&amp;itemId=12995308&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90&amp;srcid=12995308&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/97b038c6416c7aed5128311a73e9144c2aa62cf174c0b6706035f922389e57af" width="648px" height="648px" style="border:1px solid #ccc;">
+                                    </a>
+                                </div>
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=12995308&amp;confirmid=12995308&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90&amp;eX=479231.0&amp;eY=1115850.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=12995308&amp;itemId=12995308&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90&amp;urlX=479231.0&amp;urlY=1115850.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -749,7 +787,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=505488.0&amp;urlY=1149217.0&amp;itemId=560940947&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%88%98%EC%9C%A0%EC%A0%90&amp;srcid=560940947&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/bc467fb5aef9ad46bdc13ded09f9970fe0a731f60729205d941f8d7c75300103" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=560940947&amp;confirmid=560940947&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%88%98%EC%9C%A0%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%88%98%EC%9C%A0%EC%A0%90&amp;eX=505488.0&amp;eY=1149217.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=560940947&amp;itemId=560940947&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%88%98%EC%9C%A0%EC%A0%90&amp;urlX=505488.0&amp;urlY=1149217.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
+                                    <a href="https://map.kakao.com/?urlX=505488.0&amp;urlY=1149217.0&amp;itemId=560940947&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%88%98%EC%9C%A0%EC%A0%90&amp;srcid=560940947&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/bc467fb5aef9ad46bdc13ded09f9970fe0a731f60729205d941f8d7c75300103" width="648px" height="648px" style="border:1px solid #ccc;">
+                                    </a>
+                                </div>
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=560940947&amp;confirmid=560940947&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%88%98%EC%9C%A0%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%88%98%EC%9C%A0%EC%A0%90&amp;eX=505488.0&amp;eY=1149217.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=560940947&amp;itemId=560940947&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%88%98%EC%9C%A0%EC%A0%90&amp;urlX=505488.0&amp;urlY=1149217.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -819,7 +863,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=496435.0&amp;urlY=1128172.0&amp;itemId=18806265&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90&amp;srcid=18806265&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/c65d732bb3bb8f80a49d7f6f0c706f1e6adea0c9e16f8d025c21a8b9a6947d85" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=18806265&amp;confirmid=18806265&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90&amp;eX=496435.0&amp;eY=1128172.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=18806265&amp;itemId=18806265&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90&amp;urlX=496435.0&amp;urlY=1128172.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
+                                    <a href="https://map.kakao.com/?urlX=496435.0&amp;urlY=1128172.0&amp;itemId=18806265&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90&amp;srcid=18806265&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/c65d732bb3bb8f80a49d7f6f0c706f1e6adea0c9e16f8d025c21a8b9a6947d85" width="648px" height="648px" style="border:1px solid #ccc;">
+                                    </a>
+                                </div>
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=18806265&amp;confirmid=18806265&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90&amp;eX=496435.0&amp;eY=1128172.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=18806265&amp;itemId=18806265&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90&amp;urlX=496435.0&amp;urlY=1128172.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -891,7 +941,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=507592.0&amp;urlY=1128556.0&amp;itemId=1160365833&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%99%95%EC%8B%AD%EB%A6%AC%EC%A0%90&amp;srcid=1160365833&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/1ec8cd3c959ad02f55332ea7d0c108998e360d0ac4ff1736ddbcaab59ebebf92" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=1160365833&amp;confirmid=1160365833&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%99%95%EC%8B%AD%EB%A6%AC%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%99%95%EC%8B%AD%EB%A6%AC%EC%A0%90&amp;eX=507592.0&amp;eY=1128556.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=1160365833&amp;itemId=1160365833&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%99%95%EC%8B%AD%EB%A6%AC%EC%A0%90&amp;urlX=507592.0&amp;urlY=1128556.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
+                                    <a href="https://map.kakao.com/?urlX=507592.0&amp;urlY=1128556.0&amp;itemId=1160365833&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%99%95%EC%8B%AD%EB%A6%AC%EC%A0%90&amp;srcid=1160365833&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/1ec8cd3c959ad02f55332ea7d0c108998e360d0ac4ff1736ddbcaab59ebebf92" width="648px" height="648px" style="border:1px solid #ccc;">
+                                    </a>
+                                </div>
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=1160365833&amp;confirmid=1160365833&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%99%95%EC%8B%AD%EB%A6%AC%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%99%95%EC%8B%AD%EB%A6%AC%EC%A0%90&amp;eX=507592.0&amp;eY=1128556.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=1160365833&amp;itemId=1160365833&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%99%95%EC%8B%AD%EB%A6%AC%EC%A0%90&amp;urlX=507592.0&amp;urlY=1128556.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -966,7 +1022,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=464300.0&amp;urlY=1127970.0&amp;itemId=599678000&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B0%95%EC%84%9C%EC%A0%90&amp;srcid=599678000&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/97090db7ad24548f2573d81765c38ce90832c4e40e17a30384482dcb27672986" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=599678000&amp;confirmid=599678000&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B0%95%EC%84%9C%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B0%95%EC%84%9C%EC%A0%90&amp;eX=464300.0&amp;eY=1127970.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=599678000&amp;itemId=599678000&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B0%95%EC%84%9C%EC%A0%90&amp;urlX=464300.0&amp;urlY=1127970.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
+                                    <a href="https://map.kakao.com/?urlX=464300.0&amp;urlY=1127970.0&amp;itemId=599678000&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B0%95%EC%84%9C%EC%A0%90&amp;srcid=599678000&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/97090db7ad24548f2573d81765c38ce90832c4e40e17a30384482dcb27672986" width="648px" height="648px" style="border:1px solid #ccc;">
+                                    </a>
+                                </div>
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=599678000&amp;confirmid=599678000&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B0%95%EC%84%9C%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B0%95%EC%84%9C%EC%A0%90&amp;eX=464300.0&amp;eY=1127970.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=599678000&amp;itemId=599678000&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B0%95%EC%84%9C%EC%A0%90&amp;urlX=464300.0&amp;urlY=1127970.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -1040,7 +1102,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=489029.0&amp;urlY=1106220.0&amp;itemId=1794854665&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%84%9C%EC%9A%B8%EB%8C%80%EC%9E%85%EA%B5%AC%EC%A0%90&amp;srcid=1794854665&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/5e433c9145d14d3eadb4a8089d33e5d1a8f26c852dbffe59290e82dc55baac15" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=1794854665&amp;confirmid=1794854665&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%84%9C%EC%9A%B8%EB%8C%80%EC%9E%85%EA%B5%AC%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%84%9C%EC%9A%B8%EB%8C%80%EC%9E%85%EA%B5%AC%EC%A0%90&amp;eX=489029.0&amp;eY=1106220.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=1794854665&amp;itemId=1794854665&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%84%9C%EC%9A%B8%EB%8C%80%EC%9E%85%EA%B5%AC%EC%A0%90&amp;urlX=489029.0&amp;urlY=1106220.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
+                                    <a href="https://map.kakao.com/?urlX=489029.0&amp;urlY=1106220.0&amp;itemId=1794854665&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%84%9C%EC%9A%B8%EB%8C%80%EC%9E%85%EA%B5%AC%EC%A0%90&amp;srcid=1794854665&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/5e433c9145d14d3eadb4a8089d33e5d1a8f26c852dbffe59290e82dc55baac15" width="648px" height="648px" style="border:1px solid #ccc;">
+                                    </a>
+                                </div>
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=1794854665&amp;confirmid=1794854665&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%84%9C%EC%9A%B8%EB%8C%80%EC%9E%85%EA%B5%AC%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%84%9C%EC%9A%B8%EB%8C%80%EC%9E%85%EA%B5%AC%EC%A0%90&amp;eX=489029.0&amp;eY=1106220.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=1794854665&amp;itemId=1794854665&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%84%9C%EC%9A%B8%EB%8C%80%EC%9E%85%EA%B5%AC%EC%A0%90&amp;urlX=489029.0&amp;urlY=1106220.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -1108,13 +1176,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
-                               <div style="height: 650px;">
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                               <div class="monlyMapmom1" style="height: 650px;">
                                    <a href="https://map.kakao.com/?urlX=527828.0&amp;urlY=1079568.0&amp;itemId=27306268&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%84%EB%8B%B9%EC%A0%90&amp;srcid=27306268&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/54447663a92d4f74936bf011d0c6c34f11305199008d426633a0dafbcd2a6bbf" width="648px" height="648px" style="border:1px solid #ccc;">
                                     </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px">
                                     </a>
@@ -1195,13 +1263,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
-                               <div style="height: 650px;">
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                               <div class="monlyMapmom1" style="height: 650px;">
                                    <a href="https://map.kakao.com/?urlX=500050.0&amp;urlY=1046930.0&amp;itemId=13552543&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%88%98%EC%9B%90%EC%A0%90&amp;srcid=13552543&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/eb83e9226bf5c2627b1eebfa4d0c7267ac66a35e2fa9062e6f11083f625ea792" width="648px" height="648px" style="border:1px solid #ccc;">
                                    </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px">
                                     </a>
@@ -1279,13 +1347,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
-                               <div style="height: 650px;">
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                               <div class="monlyMapmom1" style="height: 650px;">
                                    <a href="https://map.kakao.com/?urlX=450041.0&amp;urlY=1155267.0&amp;itemId=25601279&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%9D%BC%EC%82%B0%EC%A0%90&amp;srcid=25601279&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/a24827cdd14151ddf310ec859a7753c14c1307545c8a8092cee46c54f752f660" width="648px" height="648px" style="border:1px solid #ccc;">
                                     </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a>
                                         <div style="float: right; position: relative; top: 1px; font-size: 11px;">
@@ -1368,7 +1436,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=439172.0&amp;urlY=1109005.0&amp;itemId=992909478&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%ED%8F%89%EC%A0%90&amp;srcid=992909478&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/1cef5b11095cb3c9ace92318e22c28d6992898b1df1162167f92e3d1dd617183" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=992909478&amp;confirmid=992909478&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%ED%8F%89%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%ED%8F%89%EC%A0%90&amp;eX=439172.0&amp;eY=1109005.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=992909478&amp;itemId=992909478&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%ED%8F%89%EC%A0%90&amp;urlX=439172.0&amp;urlY=1109005.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                           <div class="monlyMapGmom" class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                            <div class="monlyMapmom1" style="height: 650px;">
+                                <a href="https://map.kakao.com/?urlX=439172.0&amp;urlY=1109005.0&amp;itemId=992909478&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%ED%8F%89%EC%A0%90&amp;srcid=992909478&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/1cef5b11095cb3c9ace92318e22c28d6992898b1df1162167f92e3d1dd617183" width="648px" height="648px" style="border:1px solid #ccc;">
+                                </a>
+                            </div>
+                            <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=992909478&amp;confirmid=992909478&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%ED%8F%89%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%ED%8F%89%EC%A0%90&amp;eX=439172.0&amp;eY=1109005.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=992909478&amp;itemId=992909478&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%ED%8F%89%EC%A0%90&amp;urlX=439172.0&amp;urlY=1109005.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -1439,7 +1513,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=488940.0&amp;urlY=1081066.0&amp;itemId=11901982&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%EC%B4%8C%EC%A0%90&amp;srcid=11901982&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/8df616ad13ec389fbe1362192967c6a2530a7d1eef0fbff1da90a5f4e6c886cf" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=11901982&amp;confirmid=11901982&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%EC%B4%8C%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%EC%B4%8C%EC%A0%90&amp;eX=488940.0&amp;eY=1081066.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=11901982&amp;itemId=11901982&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%EC%B4%8C%EC%A0%90&amp;urlX=488940.0&amp;urlY=1081066.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                            <div class="monlyMapmom1" style="height: 650px;">
+                                <a href="https://map.kakao.com/?urlX=488940.0&amp;urlY=1081066.0&amp;itemId=11901982&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%EC%B4%8C%EC%A0%90&amp;srcid=11901982&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/8df616ad13ec389fbe1362192967c6a2530a7d1eef0fbff1da90a5f4e6c886cf" width="648px" height="648px" style="border:1px solid #ccc;">
+                                </a>
+                            </div>
+                            <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=11901982&amp;confirmid=11901982&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%EC%B4%8C%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%EC%B4%8C%EC%A0%90&amp;eX=488940.0&amp;eY=1081066.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=11901982&amp;itemId=11901982&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%EC%B4%8C%EC%A0%90&amp;urlX=488940.0&amp;urlY=1081066.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -1507,7 +1587,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=445922.0&amp;urlY=1113072.0&amp;itemId=2070864798&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%EC%B2%9C%EC%A0%90&amp;srcid=2070864798&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/36a6acf4abb2fbfb7e0922267098cdbbb911d1108ea22e133e6f062a65113b58" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=2070864798&amp;confirmid=2070864798&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%EC%B2%9C%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%EC%B2%9C%EC%A0%90&amp;eX=445922.0&amp;eY=1113072.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=2070864798&amp;itemId=2070864798&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%EC%B2%9C%EC%A0%90&amp;urlX=445922.0&amp;urlY=1113072.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                            <div class="monlyMapmom1" style="height: 650px;">
+                                <a href="https://map.kakao.com/?urlX=445922.0&amp;urlY=1113072.0&amp;itemId=2070864798&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%EC%B2%9C%EC%A0%90&amp;srcid=2070864798&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/36a6acf4abb2fbfb7e0922267098cdbbb911d1108ea22e133e6f062a65113b58" width="648px" height="648px" style="border:1px solid #ccc;">
+                                </a>
+                            </div>
+                            <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=2070864798&amp;confirmid=2070864798&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%EC%B2%9C%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%EC%B2%9C%EC%A0%90&amp;eX=445922.0&amp;eY=1113072.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=2070864798&amp;itemId=2070864798&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%EC%B2%9C%EC%A0%90&amp;urlX=445922.0&amp;urlY=1113072.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -1606,7 +1692,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                            <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=463230.0&amp;urlY=1060993.0&amp;itemId=26620790&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%95%88%EC%82%B0%EC%A0%90&amp;srcid=26620790&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/f6708d4d89c3736707e5e99bc1e9b79ba37956f64bbed1fbe6ff58e4f68d35b2" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=26620790&amp;confirmid=26620790&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%95%88%EC%82%B0%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%95%88%EC%82%B0%EC%A0%90&amp;eX=463230.0&amp;eY=1060993.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=26620790&amp;itemId=26620790&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%95%88%EC%82%B0%EC%A0%90&amp;urlX=463230.0&amp;urlY=1060993.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                            <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                                <div class="monlyMapmom1" style="height: 650px;">
+                                    <a href="https://map.kakao.com/?urlX=463230.0&amp;urlY=1060993.0&amp;itemId=26620790&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%95%88%EC%82%B0%EC%A0%90&amp;srcid=26620790&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/f6708d4d89c3736707e5e99bc1e9b79ba37956f64bbed1fbe6ff58e4f68d35b2" width="648px" height="648px" style="border:1px solid #ccc;">
+                                    </a>
+                                </div>
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=26620790&amp;confirmid=26620790&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%95%88%EC%82%B0%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%95%88%EC%82%B0%EC%A0%90&amp;eX=463230.0&amp;eY=1060993.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=26620790&amp;itemId=26620790&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%20%EC%95%88%EC%82%B0%EC%A0%90&amp;urlX=463230.0&amp;urlY=1060993.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -1629,8 +1721,8 @@
                                     <p class="normalSentence branchinfoParking">· 공영주차장 네비게이션 주소 : 경기도 안산시 단원구 고잔동 566</p>
                                 </li>
                                 <li class="branchCallKakao">
-                                    <a href="javascript:void(0)" class="midSentence_bold branchCall">031-439-0110</a>
-                                    <a href="javascript:void(0)" class="midSentence_bold branchKakao">@미앤미의원 안산</a>
+                                    <a href="javascript:void(0)" class="bigSentence_bold branchCall">031-439-0110</a>
+                                    <a href="javascript:void(0)" class="bigSentence_bold branchKakao">@미앤미의원 안산</a>
                                 </li>
                             </ul>
                         </div>
@@ -1677,7 +1769,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=434235.0&amp;urlY=1095681.0&amp;itemId=27362104&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B5%AC%EC%9B%94%EC%A0%90&amp;srcid=27362104&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/40f80a2bcec4a7393f8b81fc7c3fdf377eabde2f91fb9e2800bad1682ef56f6b" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=27362104&amp;confirmid=27362104&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B5%AC%EC%9B%94%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B5%AC%EC%9B%94%EC%A0%90&amp;eX=434235.0&amp;eY=1095681.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=27362104&amp;itemId=27362104&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B5%AC%EC%9B%94%EC%A0%90&amp;urlX=434235.0&amp;urlY=1095681.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                            <div class="monlyMapmom1" style="height: 650px;">
+                                <a href="https://map.kakao.com/?urlX=434235.0&amp;urlY=1095681.0&amp;itemId=27362104&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B5%AC%EC%9B%94%EC%A0%90&amp;srcid=27362104&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/40f80a2bcec4a7393f8b81fc7c3fdf377eabde2f91fb9e2800bad1682ef56f6b" width="648px" height="648px" style="border:1px solid #ccc;">
+                                </a>
+                            </div>
+                            <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=27362104&amp;confirmid=27362104&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B5%AC%EC%9B%94%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B5%AC%EC%9B%94%EC%A0%90&amp;eX=434235.0&amp;eY=1095681.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=27362104&amp;itemId=27362104&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B5%AC%EC%9B%94%EC%A0%90&amp;urlX=434235.0&amp;urlY=1095681.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -1751,7 +1849,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=471275.0&amp;urlY=1104708.0&amp;itemId=27560761&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B4%91%EB%AA%85%EC%A0%90&amp;srcid=27560761&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/bbfeab1facccccf4ad4045f66bb1c04e117714e8d096cc79c6f7bea2dfd5fef7" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=27560761&amp;confirmid=27560761&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B4%91%EB%AA%85%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B4%91%EB%AA%85%EC%A0%90&amp;eX=471275.0&amp;eY=1104708.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=27560761&amp;itemId=27560761&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B4%91%EB%AA%85%EC%A0%90&amp;urlX=471275.0&amp;urlY=1104708.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                            <div class="monlyMapmom1" style="height: 650px;">
+                                <a href="https://map.kakao.com/?urlX=471275.0&amp;urlY=1104708.0&amp;itemId=27560761&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B4%91%EB%AA%85%EC%A0%90&amp;srcid=27560761&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/bbfeab1facccccf4ad4045f66bb1c04e117714e8d096cc79c6f7bea2dfd5fef7" width="648px" height="648px" style="border:1px solid #ccc;">
+                                </a>
+                            </div>
+                            <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=27560761&amp;confirmid=27560761&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B4%91%EB%AA%85%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B4%91%EB%AA%85%EC%A0%90&amp;eX=471275.0&amp;eY=1104708.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=27560761&amp;itemId=27560761&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EA%B4%91%EB%AA%85%EC%A0%90&amp;urlX=471275.0&amp;urlY=1104708.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -1820,7 +1924,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative"><div style="height: 650px;"><a href="https://map.kakao.com/?urlX=519702.0&amp;urlY=970321.0&amp;itemId=1871154137&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%ED%83%9D%EC%A0%90&amp;srcid=1871154137&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/5eb9440eeea7bd5cffd3285dab66cca080bef895a30d7f51e01478a621ce6ac6" width="648px" height="648px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=1871154137&amp;confirmid=1871154137&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%ED%83%9D%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%ED%83%9D%EC%A0%90&amp;eX=519702.0&amp;eY=970321.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=1871154137&amp;itemId=1871154137&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%ED%83%9D%EC%A0%90&amp;urlX=519702.0&amp;urlY=970321.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                            <div class="monlyMapmom1" style="height: 650px;">
+                                <a href="https://map.kakao.com/?urlX=519702.0&amp;urlY=970321.0&amp;itemId=1871154137&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%ED%83%9D%EC%A0%90&amp;srcid=1871154137&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/5eb9440eeea7bd5cffd3285dab66cca080bef895a30d7f51e01478a621ce6ac6" width="648px" height="648px" style="border:1px solid #ccc;">
+                                </a>
+                            </div>
+                            <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=1871154137&amp;confirmid=1871154137&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%ED%83%9D%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%ED%83%9D%EC%A0%90&amp;eX=519702.0&amp;eY=970321.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=1871154137&amp;itemId=1871154137&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%ED%8F%89%ED%83%9D%EC%A0%90&amp;urlX=519702.0&amp;urlY=970321.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
                         </div>
                         <div class="mapRight_Box">
                             <ul class="branchInfoList">
@@ -1842,7 +1952,7 @@
                                 </li>
                                 <li class="branchCallKakao">
                                     <a href="javascript:void(0)" class="bigSentence_bold branchCall">031-656-8875~6</a>
-                                    <a href="javascript:void(0)" class="bigSentence_bold branchKakao">@미앤미의원 평촌</a>
+                                    <a href="javascript:void(0)" class="bigSentence_bold branchKakao">@미앤미의원 평탣</a>
                                 </li>
                             </ul>
                         </div>
@@ -1890,13 +2000,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:640px; height:682px; color:#333; position:relative">
-                               <div style="height: 650px;">
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:640px; height:682px; color:#333; position:relative">
+                               <div class="monlyMapmom1" style="height: 650px;">
                                    <a href="https://map.kakao.com/?urlX=535208.0&amp;urlY=922251.0&amp;itemId=746084135&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%B2%9C%EC%95%88%EC%A0%90&amp;srcid=746084135&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/94b5f01ccaf329327a8439551ed2ecb6901e1f1350a43df2dc85aadb603e9013" width="638px" height="648px" style="border:1px solid #ccc;">
                                     </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px">
                                     </a>
@@ -1977,13 +2087,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
-                               <div style="height: 650px;">
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                               <div class="monlyMapmom1" style="height: 650px;">
                                    <a href="https://map.kakao.com/?urlX=969155.0&amp;urlY=465856.0&amp;itemId=545444555&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EB%B6%80%EC%82%B0%EC%84%9C%EB%A9%B4%EC%A0%90&amp;srcid=545444555&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/ee7323f328a0a22d921f06253ab2b41fbc69347047f1cb08f24097711c81e683" width="648px" height="648px" style="border:1px solid #ccc;">
                                     </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px">
                                     </a>
@@ -2066,13 +2176,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
-                               <div style="height: 650px;">
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                               <div class="monlyMapmom1" style="height: 650px;">
                                    <a href="https://map.kakao.com/?urlX=1030159.0&amp;urlY=573748.0&amp;itemId=1279767414&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90%20%EC%9A%B8%EC%82%B0%EC%A0%90&amp;srcid=1279767414&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/1cae6a9a5708204c48f79ad7549bf63b49d4657c289f6a1c2bb1b586e8e8c63a" width="648px" height="648px" style="border:1px solid #ccc;">
                                     </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px">
                                     </a>
@@ -2160,13 +2270,13 @@
                         <p class="subPageInnerTit">위치 및 진료안내</p>
                         <div class="mapLeft_Box">
                             <!-- 서버 구축되면 api 이용할 것 -->
-                           <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
-                               <div style="height: 650px;">
+                           <div class="monlyMapGmom" style="font:normal normal 400 12px/normal dotum, sans-serif; width:650px; height:682px; color:#333; position:relative">
+                               <div class="monlyMapmom1" style="height: 650px;">
                                    <a href="https://map.kakao.com/?urlX=985743.0&amp;urlY=469384.0&amp;itemId=436127466&amp;q=%EB%AF%B8%EC%95%A4%EB%AF%B8%EC%9D%98%EC%9B%90&amp;srcid=436127466&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
                                        <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/a455116ed3a5a722e04022fad96df8d0c8f89001d05767c0eaf0fe93f7df0b0d" width="648px" height="648px" style="border:1px solid #ccc;">
                                     </a>
                                 </div>
-                                <div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                                <div class="monlyMapmom2" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
                                     <a href="https://map.kakao.com" target="_blank" style="float: left;">
                                         <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:none;width:72px;height:16px">
                                     </a>
@@ -2212,14 +2322,135 @@
     </article>
     <footer>
         <section class="fQuickcontact_Container">
+            <span class="fQuickHorizonbar"></span>
             <div class="fqContactBtn_Box">
                 <a href="javascript:void(0)" class="fqContactBtn normalSentence_bold">빠른상담</a>
             </div>
+            <div class="MfqContactBtn_Box">
+                <a href="javascript:void(0)" class="fqkakaoBtn normalSentence_bold">카톡상담</a>
+                <a href="javascript:void(0)" class="mfqContactBtn normalSentence_bold">빠른상담</a>
+            </div>
             <div class="fqContact_Box">
-                <div class="fqTitle_Box">
-                    <p class="innerTitle midSentence_bold">빠른상담</p>
+                <div class="fqContact_contBox Mfkakao_Box">
+                    <a href="javascript:void(0)" class="fqCloseBtn"></a>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="midSentence_bold branchKakaoList_title">서울</p>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00004">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">강남본점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00006">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">노원점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00007">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">신촌점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00008">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">천호점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00009">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">영등포점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00010">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">수유점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00011">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">명동점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00037">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">왕십리점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00038">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">강서점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00039">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">서울대입구점</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="midSentence_bold branchKakaoList_title">경기 · 인천</p>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00013">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">수원점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00014">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">일산점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00016">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">부평점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00015">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">평촌점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00017">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">부천점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00018">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">안산점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00019">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">분당점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00020">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">구월점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00022">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">광명점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00034">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">평택점</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="midSentence_bold branchKakaoList_title">대전 · 충청</p>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00029">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">천안점</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="midSentence_bold branchKakaoList_title">부산 · 울산 · 경상</p>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00024">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">부산서면점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00027">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">울산점</span>
+                            </a>
+                            <a href="javascript:void(0)" class="branchMfBtn branchM_C00032">
+                                <img src="" class="branchKakaoicon">
+                                <span class="smallSentence">부산센텀시티점</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="fqform_Box">
+                <div class="fqContact_contBox fqform_Box">
+                    <a href="javascript:void(0)" class="fqCloseBtn"></a>
+                    <div class="fqTitle_Box">
+                        <p class="innerTitle midSentence_bold">빠른상담</p>
+                    </div>
                     <form id="quickContact_Form_Data" name="quickContact_Form">
                         <div class="qcForm_Box">
                             <label for="_branchSelect" class="normalSentence">지점선택</label>
@@ -2263,21 +2494,21 @@
                             <input id="_branchPhone" class="fqinput normalSentence" maxlength='12'>
                         </div>
                     </form>
-                </div>
-                <div class="fqSubmit_Box">
-                    <a href="javascript:void(0)" class="fqSubmitBtn midSentence_bold">상담신청</a>
-                </div>
-                <div class="fqChk_Box">
-                    <div class="chkLeft_Box">
-                        <input type="checkbox" id="marketingAgree" name="agreeChkval1" class="agreeChk" value="Y" checked="checked">
-                        <label for="marketingAgree"></label>
-                        <span class="chkName miniSentence">미앤미에서 발송하는 시술안내, 공지, 이벤트 등 문자 수신에 동의합니다.(선택)</span>
+                    <div class="fqSubmit_Box">
+                        <a href="javascript:void(0)" class="fqSubmitBtn midSentence_bold">상담신청</a>
                     </div>
-                    <div class="chkRight_Box">
-                        <input type="checkbox" id="privacyAgree" name="agreeChkval2" class="agreeChk" value="Y" checked="checked">
-                        <label for="privacyAgree"></label>
-                        <span class="chkName miniSentence">개인정보 취급방침에 동의합니다.(필수)</span>
-                        <a class="privacyBtn miniSentence">더보기</a>
+                    <div class="fqChk_Box">
+                        <div class="chkLeft_Box">
+                            <input type="checkbox" id="marketingAgree" name="agreeChkval1" class="agreeChk" value="Y" checked="checked">
+                            <label for="marketingAgree"></label>
+                            <span class="chkName miniSentence">미앤미에서 발송하는 시술안내, 공지, 이벤트 등 문자 수신에 동의합니다.(선택)</span>
+                        </div>
+                        <div class="chkRight_Box">
+                            <input type="checkbox" id="privacyAgree" name="agreeChkval2" class="agreeChk" value="Y" checked="checked">
+                            <label for="privacyAgree"></label>
+                            <span class="chkName miniSentence">개인정보 취급방침에 동의합니다.(필수)</span>
+                            <a class="privacyBtn miniSentence">더보기</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2290,123 +2521,267 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 강남본점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 4660901901&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-567-1102<br>
-                            <b>주소 |</b> 서울시 서초구 강남대로 439(유화빌딩 9층 / 1층 데상트)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 이환석</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 이환석&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 4660901901&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-567-1102<br class="wBr_block">
+                            <b>주소 |</b> 서울시 서초구 강남대로 439(유화빌딩 9층 / 1층 데상트)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 노원점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 8250601792&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-934-1111<br>
-                            <b>주소 |</b> 서울특별시 노원구 상계동 731-3 상아빌딩 6층&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 정도헌</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 정도헌&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 8250601792&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-934-1111<br class="wBr_block">
+                            <b>주소 |</b> 서울특별시 노원구 상계동 731-3 상아빌딩 6층
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 신촌점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 7462101231&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-702-1138<br>
-                            <b>주소 |</b> 서울특별시 마포구 신촌로 92 5층(노고산동, 카리스빌딩)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 소광오</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 소광오&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 7462101231&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-702-1138<br class="wBr_block">
+                            <b>주소 |</b> 서울특별시 마포구 신촌로 92 5층(노고산동, 카리스빌딩)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 천호점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 2122532660&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-470-1175<br>
-                            <b>주소 |</b> 서울특별시 강동구 올림픽로 651 (천호동, 예경빌딩 4층1호)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 박현정</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 박현정&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 2122532660&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-470-1175<br class="wBr_block">
+                            <b>주소 |</b> 서울특별시 강동구 올림픽로 651 (천호동, 예경빌딩 4층1호)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 영등포점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 1071885998&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-2068-1172<br>
-                            <b>주소 |</b> 서울특별시 영등포구 경인로 841 (우체국보험회관 5층)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 김재훈</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 김재훈&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 1071885998&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-2068-1172<br class="wBr_block">
+                            <b>주소 |</b> 서울특별시 영등포구 경인로 841 (우체국보험회관 5층)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 수유점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 2102056619&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-999-1101<br>
-                            <b>주소 |</b> 서울특별시 강북구 번동 446-12 글로리타워 6층&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 이형철</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 이형철&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 2102056619&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-999-1101<br class="wBr_block">
+                            <b>주소 |</b> 서울특별시 강북구 번동 446-12 글로리타워 6층
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 명동점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 4137100434&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-754-1108<br>
-                            <b>주소 |</b> 서울특별시 중구 충무로 1가 24-31번지 2431빌딩 14층 (기업은행 건물)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 김범석</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 김범석&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 4137100434&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-754-1108<br class="wBr_block">
+                            <b>주소 |</b> 서울특별시 중구 충무로 1가 24-31번지 2431빌딩 14층 (기업은행 건물)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 왕십리점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 5651501140&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-2297-1175<br>
-                            <b>주소 |</b> 서울시 성동구 왕십리로 320 W에비뉴타워 2층 (도선동 46)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 박재우</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 박재우&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 5651501140&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-2297-1175<br class="wBr_block">
+                            <b>주소 |</b> 서울시 성동구 왕십리로 320 W에비뉴타워 2층 (도선동 46)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 강서점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 5293300834&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-3663-1175<br>
-                            <b>주소 |</b> 서울 강서구 강서로 385 5층&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 백진오</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 백진오&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 5293300834&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-3663-1175<br class="wBr_block">
+                            <b>주소 |</b> 서울 강서구 강서로 385 5층
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 서울대입구점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 8910102207&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-877-8160<br>
-                            <b>주소 |</b> 서울 관악구 남부순환로 1801 라피스빌딩 6층 (서울대입구역 5번출구)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 황순재</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 황순재&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 8910102207&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-877-8160<br class="wBr_block">
+                            <b>주소 |</b> 서울 관악구 남부순환로 1801 라피스빌딩 6층 (서울대입구역 5번출구)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 수원점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 1860101595&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 031-246-1131<br>
-                            <b>주소 |</b> 경기도 수원시 팔달구 덕영대로 899 세진브론즈빌 3층&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 김범회</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 김범회&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 1860101595&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 031-246-1131<br class="wBr_block">
+                            <b>주소 |</b> 경기도 수원시 팔달구 덕영대로 899 세진브론즈빌 3층
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 일산점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 2772100115&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 031-932-8892<br>
-                            <b>주소 |</b> 경기도 고양시 일산동구 정발산로 43-20 센트럴프라자 8층&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 최원준</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 최원준&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 2772100115&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 031-932-8892<br class="wBr_block">
+                            <b>주소 |</b> 경기도 고양시 일산동구 정발산로 43-20 센트럴프라자 8층
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 부평점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 5521601592&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 032-506-1111<br>
-                            <b>주소 |</b> 인천광역시 부평구 경원대로 1401 (부평동, 대성빌딩 5층)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 서도원</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 서도원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 5521601592&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 032-506-1111<br class="wBr_block">
+                            <b>주소 |</b> 인천광역시 부평구 경원대로 1401 (부평동, 대성빌딩 5층)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 평촌점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 5663001113&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 031-385-1131<br>
-                            <b>주소 |</b> 경기 안양시 동안구 시민대로 171 금강벤처텔 3층 (범계역 8번출구)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 김대호</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 김대호&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 5663001113&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 031-385-1131<br class="wBr_block">
+                            <b>주소 |</b> 경기 안양시 동안구 시민대로 171 금강벤처텔 3층 (범계역 8번출구)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 부천점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 1304695669&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 032-326-1111<br>
-                            <b>주소 |</b> 경기도 부천시 원미구 길주로 115 6층 (상동, 시그마타워)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 김혁찬</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 김혁찬&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 1304695669&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 032-326-1111<br class="wBr_block">
+                            <b>주소 |</b> 경기도 부천시 원미구 길주로 115 6층 (상동, 시그마타워)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 부천점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 4650600039&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 031-439-0110<br>
-                            <b>주소 |</b> 경기도 안산시 단원구 고잔1길 7 3층 303, 304, 305호 (롯데백화점 맞은편 투썸 건물 3층)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 오원석</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 오원석&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 4650600039&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 031-439-0110<br class="wBr_block">
+                            <b>주소 |</b> 경기도 안산시 단원구 고잔1길 7 3층 303, 304, 305호 (롯데백화점 맞은편 투썸 건물 3층)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 분당점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 4070763767&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 031-704-1171<br>
-                            <b>주소 |</b> 성남시 분당구 황새울로360번길21 (신영펠리스타워4층)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 김인호</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 김인호&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 4070763767&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 031-704-1171<br class="wBr_block">
+                            <b>주소 |</b> 성남시 분당구 황새울로360번길21 (신영펠리스타워4층)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 구월점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 2427100074&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 032-434-1172<br>
-                            <b>주소 |</b> 인천광역시 남동구 인하로 507번길 1 우리은행 4층&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 오건우</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 오건우&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 2427100074&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 032-434-1172<br class="wBr_block">
+                            <b>주소 |</b> 인천광역시 남동구 인하로 507번길 1 우리은행 4층
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 광명점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 1122534539&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 02-2613-1131<br>
-                            <b>주소 |</b> 경기도 광명시 철산로 36 양정타워 4층(철산동 385)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 이상원</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 이상원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 1122534539&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 02-2613-1131<br class="wBr_block">
+                            <b>주소 |</b> 경기도 광명시 철산로 36 양정타워 4층(철산동 385)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 평택점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 7191500961&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 031-656-8875<br>
-                            <b>주소 |</b> 경기 평택시 중앙2로 13 평택동 복합상가 204호 (평택동 291)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 임준규</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 임준규&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 7191500961&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 031-656-8875<br class="wBr_block">
+                            <b>주소 |</b> 경기 평택시 중앙2로 13 평택동 복합상가 204호 (평택동 291)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 천안점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 2501600659&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 041-565-1175<br>
-                            <b>주소 |</b> 충남 천안시 동남구 만남로 52 문타워 7층&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 배승영</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 배승영&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 2501600659&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 041-565-1175<br class="wBr_block">
+                            <b>주소 |</b> 충남 천안시 동남구 만남로 52 문타워 7층
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 부산서면점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 6850500562&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 051-807-1175<br>
-                            <b>주소 |</b> 부산광역시 부산진구 부전동 163-1 부산파이낸스센터 14층(중앙대로 708)&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 김광현</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 김광현&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 6850500562&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 051-807-1175<br class="wBr_block">
+                            <b>주소 |</b> 부산광역시 부산진구 부전동 163-1 부산파이낸스센터 14층(중앙대로 708)
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 울산점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 7042800028&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 052-276-1175<br>
-                            <b>주소 |</b> 울산 남구 삼산로 287 (삼산동 1525-6번지) 톨하우스빌딩 5층&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 이홍석</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 이홍석&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 7042800028&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 052-276-1175<br class="wBr_block">
+                            <b>주소 |</b> 울산 남구 삼산로 287 (삼산동 1525-6번지) 톨하우스빌딩 5층
+                        </p>
                     </div>
                     <div class="swiper-slide branchInfo_slide">
                         <p class="fBranchName smallSentence_bold">미앤미 부산센텀시티점</p>
-                        <p class="fBranchinfo miniSentence"><b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<b>사업자번호 |</b> 6404500380&nbsp;&nbsp;&nbsp;&nbsp;<b>전화번호 |</b> 051-743-1171<br>
-                            <b>주소 |</b> 부산 해운대구 센텀2로 19 우동 센텀코아 빌딩 702호&nbsp;&nbsp;&nbsp;&nbsp;<b>대표 |</b> 강현섭</p>
+                        <p class="fBranchinfo miniSentence">
+                            <b>사업자명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사이트명 |</b> 미앤미의원&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>대표 |</b> 강현섭&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <b>사업자번호 |</b> 6404500380&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>전화번호 |</b> 051-743-1171<br class="wBr_block">
+                            <b>주소 |</b> 부산 해운대구 센텀2로 19 우동 센텀코아 빌딩 702호
+                        </p>
                     </div>
                 </div>
             </div>
@@ -2430,14 +2805,42 @@
     <script>
         $(document).ready(function(){
             //C00004, C00018 swiper
-            var doubleProfile_Swiper = new Swiper(".doubleProfile_Box", {
+            // var doubleProfile_Swiper = new Swiper(".doubleProfile_Box", {
+            //     spaceBetween: 300,
+            //     navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            //     },
+            // });
+            
+            //mobile branch tab
+            var BRANCH_D_WIDTH = $(window).width();
+            if (BRANCH_D_WIDTH >= 360 && BRANCH_D_WIDTH <= 1159) {
+                $('.titleBtn_Box a').text('');
+
+                // $('.doubleProfile_Box').addclass('M_doubleProfile_Box');
+                $('.doubleProfile_Box').attr('class','M_doubleProfile_Box');
+                var m_doubleProfile_Swiper = new Swiper(".M_doubleProfile_Box", {
+                    spaceBetween: 17,
+                    navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    },
+                });
+
+                $('.monlyMapGmom').css({'width':'100%', 'height':'300px'});
+                $('.monlyMapmom1').css('height','300px');
+                $('.monlyMapmom1 > a').css({'width':'100%','height':'100%', 'overflow':'hidden'});
+                $('.monlyMapmom1 > a > img').attr({'width':'100%','height':'auto'});
+            }else{
+                var doubleProfile_Swiper = new Swiper(".doubleProfile_Box", {
                 spaceBetween: 300,
                 navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
                 },
             });
-            
+            }
         });
     </script>
 </body>

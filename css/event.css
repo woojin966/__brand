@@ -3,9 +3,10 @@
 .eventBtn > div{width: 50%; height: 100%; overflow: hidden;}
 .thumb_Box img{position: relative; top: -10px; width: 100%;}
 .thumb_Box img.img150{top: 0; left: -150px; width: 150%;}
+.thumb_Box img.eventimg2{top: 0;}
 .detail_Box{padding: 40px;}
 .pinkLabel{display: inline-block; padding: 5px 10px; margin-bottom: 10px; border: 1px solid var(--deeppink); color: var(--deeppink);}
-.eventDate{margin-bottom: 40px; color: var(--darkgray);}
+.eventDate{margin-bottom: 40px; display: block; color: var(--darkgray);}
 .evnetTitle{padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid var(--darkkbeige);}
 .evnetMore{position: relative; padding-right: 10px; text-align: right;}
 .evnetMore:before{content: ''; position: absolute; top: 8px; right: 0; width: 5px; height: 5px; border-top: 1px solid #000; border-right: 1px solid #000; transform: rotate(45deg);}
@@ -32,3 +33,27 @@
 .disableBranch:before{border-top: 2px solid #fff; border-right: 2px solid #fff;}
 .subCont_Container .bottom_Box{display: flex; justify-content: space-between; align-items: center; padding-top: 20px;}
 .goeventListBtn{padding: 10px 20px; background-color: var(--deeppink); color: #fff;}
+
+@media (min-width: 360px) and (max-width: 1199px) {
+    .eventBtn{flex-direction: column; height: 336px;}
+    .eventBtn > div{width: 100%; height: 50%;}
+    .eventBtn > .thumb_Box{height: 60%;}
+    .eventBtn > .detail_Box{padding: 20px; height: 40%;}
+    .eventDate {margin-bottom: 10px; display: inline-block;}
+    .evnetTitle{padding-bottom: 5px; margin-bottom: 5px;}
+    .thumb_Box img.img150{top: 0; left: -40px; width: 120%;}
+    .thumb_Box img.eventimg2{top: -20px;}
+    .subCont_Container .title_Box{align-items: center; padding-bottom: 20px;}
+    .titleLeft_Box .normalSentence{padding-top: 5px;}
+    .titleRight_Box{padding: 10px 20px;}
+    .subCont_Container .content_Box{padding: 20px 17px;}
+    .content_Box:before, .content_Box:after{left: 17px; width: calc(100% - 34px);}
+    .ImgBox{height: 150px;}
+    .ImgBox img{top: 0;}
+    .branchTabCont li{width: calc(50% - 5px); margin-right: 10px; margin-bottom: 10px;}
+    .branchTabCont li:nth-child(5n){margin-right: 10px;}
+    .branchTabCont li:nth-child(even){margin-right: 0;}
+    .branchTabCont li:nth-child(21), .branchTabCont li:nth-child(22), .branchTabCont li:nth-child(23), .branchTabCont li:nth-child(24){margin-bottom: 10px;}
+    .subCont_Container .bottom_Box{padding-top: 10px;}
+    .goeventListBtn{margin-left: 10px; padding: 10px; width: 30%;}
+}

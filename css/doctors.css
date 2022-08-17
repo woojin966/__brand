@@ -8,7 +8,7 @@ main{padding-bottom: 140px;}
 .drListCont li:nth-child(3n){margin-right: 0;}
 .drCardBtn{padding: 60px 40px 40px; width: 100%; height: 100%;}
 .drPhoto_Box{width: 345px; height: 345px; background-color: #fff; overflow-x: clip;}
-.drPhoto_Box.C00013{overflow: hidden;}
+#C00013{overflow: hidden;}
 .drPhoto_Box img{position: absolute; bottom: 0; left: -15px; width: auto; height: 120%;}
 .drPhoto_Box img.C00004{left: 4px;}
 .photoTxt_Box{position: absolute; top: 20px; left: 20px; display: flex; flex-direction: column; justify-content: space-between; height: calc(100% - 40px);}
@@ -26,3 +26,21 @@ main{padding-bottom: 140px;}
 .drHover_Box:before{content: ''; position: absolute; top: 80px; left: 40px; width: 1px; height: 72%; background-color: #fff;}
 .drHover_Box:after{content: ''; position: absolute; top: calc(50% - 20px); right: 40px; width: 100px; height: 20px; background: url(https://github.com/woojin966/__brand/blob/main/img/icon/longarrow_w.png?raw=true) no-repeat; background-size: contain;}
 .drHover_Box p{color: #fff;}
+
+@media (min-width: 360px) and (max-width: 1199px) {
+    main{padding-bottom: 60px;}
+    .subCont_Container.doctors_Container2{padding: 60px 17px 0;}
+    .drListCont.currentListCont{flex-direction: column;}
+    .drListCont li{margin-right: 0; width: 100%;}
+    .drCardBtn {padding: 40px 20px 20px;}
+    .M_drPhoto_Box{width: 100%; background-color: #fff; overflow-x: clip;}
+    #C00013{overflow: hidden;}
+    .M_drPhoto_Box img{position: absolute; bottom: 0; left: -15px; width: auto; height: 120%;}
+    .M_drPhoto_Box img.C00004{left: 4px;}
+    .drName_Box{padding-top: 20px;}
+    .nameTop_Box{padding-bottom: 10px;}
+    .nameBottom_Box{padding-top: 10px;}
+    .drHover_Box{padding: 20px;}
+    .drHover_Box:before{top: 60px; left: 20px;}
+    .drHover_Box:after{right: 20px; width: 80px;}
+}

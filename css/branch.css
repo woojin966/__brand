@@ -11,14 +11,14 @@
 .pfPhoto_Box, .pfCareer_Box{width: 50%;}
 .pfPhoto_Box{height: 670px;}
 .pfPhoto_Box img{position: absolute; bottom: 0; width: 90%;}
-.pfCareer_Box{padding: 40px; background-color: #fff; position: absolute; right: 0; top: 80px; height: 650px; box-shadow: 3px 3px 8px rgb(0 0 0 / 15%);}
+.pfCareer_Box{padding: 40px; background-color: #fff; position: absolute; right: 0; top: 80px; bottom: unset; height: 650px; box-shadow: 3px 3px 8px rgb(0 0 0 / 15%);}
 .bCProfile_Box > .pfCareer_Box{width: 650px; right: 300px}
 .careerTop_Box{display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--darkkbeige);}
-.careerBottom_Box p{position: relative; padding-left: 10px; line-height: 2;}
+.careerBottom_Box p{position: relative; padding-left: 10px; line-height: 2; margin-bottom: 0;}
 .careerBottom_Box.careerFlexHalf{display: flex; flex-direction: row; flex-wrap: wrap;}
 .careerBottom_Box.careerFlexHalf p{width: 50%; letter-spacing: -2px;}
 .careerBottom_Box p:before{content: ''; position: absolute; top: calc(50% - 2.5px); left: 0; width: 5px; height: 5px; border-radius: 5px; background-color: var(--pink);}
-.branchWatermark{position: absolute; bottom: 40px; right: 40px; color: var(--lightbeige);}
+.branchWatermark{position: absolute; bottom: 40px; right: 40px; display: block; color: var(--lightbeige);}
 .swiper-button-prev, .swiper-button-next{top: calc(50% - 60px); width: 60px; height: 60px; border: 1px solid var(--darkgray); color: #000000; background-color: rgba(255,255,255,.4);}
 .swiper-button-prev{left: 0;}
 .swiper-button-next{right: 0;}
@@ -28,14 +28,49 @@
 .bCMap_Box > .subPageInnerTit{margin-bottom: 40px; width: 100%;}
 .bCMap_Box > div{width: 50%;}
 .mapLeft_Box{height: 650px;}
-.mapRight_Box{padding-left: 40px;}
+.mapRight_Box{padding-left: 40px; padding-top: 0;}
 .branchInfoList li{margin-bottom: 40px;}
-.branchInfoList li:last-child{margin-bottom: 0;}
+.branchInfoList li:last-child{margin-bottom: 0; margin-top: 0;}
 .branchinfoTitle{margin-bottom: 10px; color: var(--deeppink);}
 .branchinfoTime{line-height: 2;}
 .branchinfoTime span{display: inline-block; width: 140px; letter-spacing: 2px;}
-.branchCallKakao a{position: relative; padding-left: 45px; color: var(--deeppink);}
+.branchCallKakao a{position: relative; padding-left: 45px; padding-top: 0; color: var(--deeppink);}
 .branchCallKakao a:before{content: ''; position: absolute; top: 0; left: 0; width: 36px; height: 36px;}
 .branchCall{margin-right: 40px;}
 .branchCall:before{background: var(--deeppink) url(https://github.com/woojin966/__brand/blob/main/img/icon/callIcon.png?raw=true) no-repeat center center; background-size: 80%; border-radius: 5px;}
 .branchKakao:before{background: url(https://github.com/woojin966/__brand/blob/main/img/icon/kakaoIcon.png?raw=true) no-repeat; background-size: contain;}
+.branchCallKakao .bigSentence_bold{font-size: 24px;}
+
+@media (min-width: 360px) and (max-width: 1199px) {
+    .subCont_Container > .subTab_Box{height: 82px;}
+    .subCont_Container.branch_Container2{padding-top: 60px;}
+    .branchListCont > div{padding: 0 17px;}
+    
+    .titleBtn_Box a{padding: 0; width: 40px; height: 40px; height: 40px; border-radius: 40px;}
+    .M_doubleProfile_Box{display: flex; height: 650px; overflow: hidden;}
+    .M_doubleProfile_Box:before{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 600px; background-color: var(--brickbeige_30);}
+    .pfPhoto_Box, .pfCareer_Box{width: 100%;}
+    .pfPhoto_Box{height: 50%;}
+    .pfPhoto_Box img{top: 0; width: 100%;}
+    .pfCareer_Box{padding: 20px; top: unset; bottom: 25px; height: 50%; overflow-y: scroll;}
+    .careerTop_Box{padding-bottom: 10px; margin-bottom: 10px;}
+    .careerBottom_Box p{line-height: 1.5; margin-bottom: 5px;}
+    .swiper-button-prev, .swiper-button-next{top: 25%; width: 40px; height: 40px;}
+    .swiper-button-prev:after, .swiper-button-next:after{width: 50%; height: 50%;}
+    .branchWatermark{display: none;}
+
+    .branchListCont .bCMap_Box{padding-top: 40px; flex-direction: column;}
+    .bCMap_Box > .subPageInnerTit{margin-bottom: 20px;}
+    .bCMap_Box > div{width: 100%;}
+    .mapLeft_Box{height: 330px;}
+    .mapRight_Box{padding-left: 0; padding-top: 20px;}
+    .branchInfoList li{margin-bottom: 10px;}
+    .branchinfoTitle{margin-bottom: 5px;}
+    .branchInfoList li:last-child{margin-top: 20px;}
+    .branchCallKakao a{padding-left: 35px; padding-top: 3px;}
+    .branchCallKakao a:before{width: 30px; height: 30px;}
+    .careerBottom_Box.careerFlexHalf{display: block;}
+    .bCProfile_Box > .pfCareer_Box{width: calc(100% - 34px); right: unset;}
+    .branchCall{margin-right: 10px;}
+    .branchCallKakao .bigSentence_bold{font-size: 16px;}
+}

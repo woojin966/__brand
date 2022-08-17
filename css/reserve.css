@@ -13,3 +13,14 @@
 .info{width: 75%;}
 .info_left20{padding-left: 15%;}
 .info span{margin-right: 10px;}
+
+@media (min-width: 360px) and (max-width: 1199px) {
+    .reseveBranchList{flex-direction: column;}
+    .reseveBranchList li{padding: 20px; margin-top: 10px; width: 100%;}
+    .reseveBranchList li:nth-child(2){margin-top: 10px;}
+    .cardTitle {margin-right: 5px;}
+    .reserveBtn {padding: 10px; top: -5px;}
+    .bottom_Box{padding-top: 10px;}
+    .infoTitle{width: 25%;}
+    .info_left20{padding-left: 25%; width: 100%;}
+}
