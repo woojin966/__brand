@@ -25,6 +25,23 @@ main{padding: 0;}
 .fiLawBtn{color: #fff;}
 .fiLawBtn:before{background-color: #fff; opacity: .6;}
 
+.eventModal_Section{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.eventModal_Box{position: absolute; top: 10%; left: calc(50% - 570px); z-index: 11; display: none; width: auto; overflow: hidden; box-shadow: 0 0 10px var(--shadow);}
+.modalswiper_block{display: block;}
+.eventModal_Box .swiper-wrapper{width: 1080px;}
+.eventModal_Box .swiper-pagination{bottom: 0; z-index: 12; width: 100%;}
+
+.swiper-pagination-clickable .swiper-pagination-bullet{cursor: pointer; margin: 0 !important; width: 33.3333%; padding: 20px 0; border-radius: 0; display: inline-block; font-size: 16px; line-height: 0; color: #000; background-color: #fff; opacity: .6;}
+.swiper-pagination-clickable .swiper-pagination-bullet-active{opacity: 1;}
+.swiper-pagination-clickable .eventMpagi1{border-left: 1px solid var(--pink); border-right: 1px solid var(--pink);}
+.eventModalClose_Box{position: absolute; top: 10%; left: calc(100% - 440px); right: unset; display: none; width: 60px; height: 60px; z-index: 11;}
+.close_block{display: block;}
+.eventModalClose_Box a{width: 100%; height: 100%;}
+.eventModalClose_Box a:before{content: ''; position: absolute; top: 0; left: 30px; width: 2px; height: 100%; background-color: #fff; transform: rotate(45deg);}
+.eventModalClose_Box a:after{content: ''; position: absolute; top: 0; left: 30px; width: 2px; height: 100%; background-color: #fff; transform: rotate(-45deg);}
+.eventModalbg_Box{position: absolute; top: 0; left: 0; z-index: 10; display: none; width: 100%; height: 100%; background-color: var(--shadow);}
+.modalbg_block{display: block;}
+
 /* mibile */
 @media (min-width: 360px) and (max-width: 1199px) {
     .homeMain_Container2{padding: 0 17px 10px;}
@@ -41,4 +58,14 @@ main{padding: 0;}
     
     footer{padding-bottom: 0; background-color: var(--lightbeige);} 
     .fInfo_Container:before{left: 17px; width: calc(100% - 34px);}
+
+    .eventModal_Box{left: 17px; width: calc(100% - 34px);}
+    .eventModal_Box .swiper-wrapper{width: 100%;}
+    .eventModal_Box .swiper-slide img{width: 100%;}
+    .eventModal_Box .swiper-pagination{bottom: 12px;}
+    .swiper-pagination-clickable .swiper-pagination-bullet{margin: 4px !important; padding: 0; width: 10px; height: 10px; border-radius: 10px;}
+    .swiper-pagination-clickable .eventMpagi1{border-left: none; border-right: none;}
+    .eventModalClose_Box{top: 7%; left: unset; right: 17px; width: 30px; height: 30px;}
+    .eventModalClose_Box a:before{left: 17px;}
+    .eventModalClose_Box a:after{left: 17px;}
 }
