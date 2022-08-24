@@ -1,6 +1,6 @@
 main{padding: 0;}
-.homeMain_Container1{height: 550px; background-color: var(--lightbeige);}
-.homeMain_Container1 img{display: block; width: 100%; height: 100%;}
+.homeMain_Container1{height: calc(100vh - 170px); position: relative; overflow: hidden;}
+.homeMain_Container1 video{position: absolute; top: 0; pointer-events: none;}
 
 .homeMain_Container2{padding: 0 300px 40px; background-color: var(--pink);}
 .branchTabList{display: flex; justify-content: space-between;}
@@ -44,6 +44,9 @@ main{padding: 0;}
 
 /* mibile */
 @media (min-width: 360px) and (max-width: 1199px) {
+    .homeMain_Container1{height: calc(100vh - 42px);}
+    .homeMain_Container1 video{top: 50px; left: -130%; height: calc(100% - 50px); width: auto;}
+
     .homeMain_Container2{padding: 0 17px 10px;}
     .homeBranchTab_Box{width: 100%; overflow-x: scroll;}
     .branchTabList{width: 120%; height: 40px; white-space: nowrap; justify-content: stretch;}
