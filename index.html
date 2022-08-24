@@ -231,6 +231,26 @@
             </section>
         </main>
     </article>
+    <section class="eventModal_Section">
+        <div class="eventModal_Box modalswiper_block">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide eventMslide1">
+                    <img src="img/event/event1pc.jpg" alt="eventModalimg">
+                </div>
+                <div class="swiper-slide eventMslide2">
+                    <img src="img/event/event2pc.jpg" alt="eventModalimg">
+                </div>
+                <div class="swiper-slide eventMslide3">
+                    <img src="img/event/event3pc.jpg" alt="eventModalimg">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="eventModalClose_Box close_block">
+            <a href="javascript:void(0)" class="eventModalClose_Btn"></a>
+        </div>
+        <div class="eventModalbg_Box modalbg_block"></div>
+    </section>
     <footer>
         <section class="fQuickcontact_Container">
             <span class="fQuickHorizonbar"></span>
@@ -354,8 +374,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next fkakoslide_next"></div>
+                    <div class="swiper-button-prev fkakoslide_prev"></div>
                 </div>
                 <div class="fqContact_contBox fqform_Box">
                     <a href="javascript:void(0)" class="fqCloseBtn"></a>
@@ -731,6 +751,73 @@
                     ACT_BRANCHLIST.addClass('currentTabCont');
                 }
             });
+
+            //modal swiper
+            var eventModalswiper = new Swiper(".eventModal_Box", {
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + ' eventMpagi' + index + '">' + 'text' + "</span>";
+                },
+                },
+                grabCursor: true,
+                autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                },
+            });
+
+            $('.eventMpagi0').text('미앤미 예쁨JUNE비');
+            $('.eventMpagi1').text('썸머얼리버드 이벤트');
+            $('.eventMpagi2').text('NDA PLUS');
+
+            $('.eventModalClose_Btn').on('click', function(){
+                var MODALCOLSE_BTN = $(this);
+                var CLOSEBTN_BOX = MODALCOLSE_BTN.closest('.eventModalClose_Box');
+                var SWIPER_BOX = CLOSEBTN_BOX.prev('.eventModal_Box');
+                var MODALBG_BOX = CLOSEBTN_BOX.next('.eventModalbg_Box');
+
+                if(CLOSEBTN_BOX.hasClass('close_block')){
+                    CLOSEBTN_BOX.removeClass('close_block');
+                    SWIPER_BOX.removeClass('modalswiper_block');
+                    MODALBG_BOX.removeClass('modalbg_block');
+                    $('.eventModal_Section').css('display','none');
+                }else{
+                    CLOSEBTN_BOX.addClass('close_block');
+                    SWIPER_BOX.addClass('modalswiper_block');
+                    MODALBG_BOX.addClass('modalbg_block');
+                    $('.eventModal_Section').css('display','block');
+                }
+            });
+            $('.eventModalbg_Box').on('click', function(){
+                var MODAL_BG = $(this);
+                var _CLOSEBTN_BOX = MODAL_BG.prev('.eventModalClose_Box');
+                var _SWIPER_BOX = _CLOSEBTN_BOX.prev('.eventModal_Box');
+
+                if(MODAL_BG.hasClass('modalbg_block')){
+                    MODAL_BG.removeClass('modalbg_block');
+                    _CLOSEBTN_BOX.removeClass('close_block');
+                    _SWIPER_BOX.removeClass('modalswiper_block');
+                    $('.eventModal_Section').css('display','none');
+                }else{
+                    MODAL_BG.addClass('modalbg_block');
+                    _CLOSEBTN_BOX.addClass('close_block');
+                    _SWIPER_BOX.addClass('modalswiper_block');
+                    $('.eventModal_Section').css('display','block');
+                }
+            });
+
+            var INDEX_D_WIDTH = $(window).width();
+            if (INDEX_D_WIDTH >= 360 && INDEX_D_WIDTH <= 1159) {
+                console.log('bbbbb');
+                $('.eventMpagi0').text('');
+                $('.eventMpagi1').text('');
+                $('.eventMpagi2').text('');
+                $('.eventMslide1 img').attr('src','img/event/event1m.jpg');
+                $('.eventMslide2 img').attr('src','img/event/event2m.jpg');
+                $('.eventMslide3 img').attr('src','img/event/event3m.jpg');
+            }
         });
     </script>
 </body>
