@@ -2,13 +2,13 @@ main{padding: 0;}
 .homeMain_Container1{height: calc(100vh - 170px); position: relative; overflow: hidden;}
 .homeMain_Container1 video{position: absolute; top: 0; pointer-events: none;}
 
-.homeMain_Container2{padding: 0 300px 40px; background-color: var(--pink);}
+.homeMain_Container2{padding: 0 300px 40px; background-color: var(--deeppink);}
 .branchTabList{display: flex; justify-content: space-between;}
 .branchTabList li{display: inline-block; width: 25%;}
-.branchTab{position: relative; padding: 20px; width: 100%; height: 100%; text-align: center; color: #fff;}
-.branchTab:before{content: ''; position: absolute; left: 0; bottom: 2px; width: 100%; height: 2px; background-color: #fff;}
-.branchTab.currentTab{font-weight: bold; color: var(--deeppink);}
-.branchTab.currentTab:before{background-color: var(--deeppink);}
+.branchTab{position: relative; padding: 20px; width: 100%; height: 100%; text-align: center; color: var(--pink);}
+.branchTab:before{content: ''; position: absolute; left: 0; bottom: 2px; width: 100%; height: 2px; background-color: var(--pink);;}
+.branchTab.currentTab{font-weight: bold; color:#fff;}
+.branchTab.currentTab:before{background-color: #fff;}
 .branchBtn_Box{padding: 20px 0 0; min-height: 153px;}
 .branchTabCont{display: none; flex-wrap: wrap;}
 .branchTabCont.currentTabCont{display: flex;}
@@ -19,7 +19,7 @@ main{padding: 0;}
 .branchBtn:before{content: ''; position: absolute; top: calc(50% - 5px); right: 20px; width: 10px; height: 10px; border-top: 2px solid #000; border-right: 2px solid #000; transform: rotate(45deg);}
 
 .fQuickcontact_Container{display: none;}
-.fInfo_Container{position: relative; background-color: var(--pink);}
+.fInfo_Container{position: relative; background-color: var(--deeppink);}
 .fInfo_Container:before{content: ''; position: absolute; top: 0; left: 300px; width: 1300px; height: 1px; background-color: #fff; opacity: .6;}
 .fInfo_Container p{color: #fff;}
 .fiLawBtn{color: #fff;}
