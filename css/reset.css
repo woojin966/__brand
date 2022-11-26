@@ -154,7 +154,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance:none;
   appearance:none;
-  background:url('https://github.com/woojin966/__brand/blob/main/img/icon/icon_arrow.png?raw=true') no-repeat;
+  background:url('https://github.com/woojin966/__brand/blob/main/img/icon/selectIcon.png?raw=true') no-repeat 96% 15px;
 }
 /* IE에서 Select box 화살표 제거 */
 select::-ms-expand { display:none; }
